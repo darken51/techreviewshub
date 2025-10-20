@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Reviews Hub - Expert Product Reviews & Buying Guides</title>
-    <meta name="description" content="In-depth technology product reviews to help you make informed purchasing decisions. Expert analysis of laptops, headphones, monitors, and more.">
+    <title>Tech Reviews Hub - Tests et Avis d'Experts sur les Produits Tech</title>
+    <meta name="description" content="Tests approfondis de produits technologiques pour vous aider à prendre des décisions d'achat éclairées. Analyses d'experts sur laptops, casques, moniteurs et plus encore.">
     <style>
         * {
             margin: 0;
@@ -54,18 +54,21 @@
             font-style: italic;
         }
 
-        .reviews-section {
+        .category-section {
             background: white;
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
-        .section-title {
+        .category-title {
             font-size: 2em;
             color: #333;
             margin-bottom: 30px;
             text-align: center;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
         }
 
         .reviews-grid {
@@ -102,6 +105,13 @@
             margin: 10px 0;
         }
 
+        .review-card .price {
+            color: #555;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
         .review-card .excerpt {
             color: #555;
             margin: 15px 0;
@@ -124,19 +134,6 @@
             background: #764ba2;
         }
 
-        .coming-soon {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        .coming-soon h3 {
-            font-size: 1.8em;
-            margin-bottom: 15px;
-        }
-
         footer {
             margin-top: 50px;
             text-align: center;
@@ -155,7 +152,7 @@
             .reviews-grid {
                 grid-template-columns: 1fr;
             }
-            header, .reviews-section {
+            header, .category-section {
                 padding: 30px 20px;
             }
         }
@@ -165,57 +162,266 @@
     <div class="container">
         <header>
             <h1>🎯 Tech Reviews Hub</h1>
-            <p class="subtitle">Expert Product Reviews & Buying Guides</p>
-            <p class="tagline">Helping you make informed decisions on your next tech purchase</p>
+            <p class="subtitle">Tests et Avis d'Experts sur les Produits Tech</p>
+            <p class="tagline">Nous vous aidons à prendre des décisions éclairées pour vos achats technologiques</p>
         </header>
 
-        <div class="reviews-section">
-            <h2 class="section-title">Latest Reviews</h2>
-
+        <!-- LAPTOPS -->
+        <div class="category-section">
+            <h2 class="category-title">💻 Ordinateurs Portables</h2>
             <div class="reviews-grid">
                 <div class="review-card">
                     <h2>Lenovo ThinkPad X1 Carbon Gen 11</h2>
                     <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€1,799</p>
                     <p class="excerpt">
-                        The ultimate business laptop - lightweight, powerful, and built to last.
-                        With exceptional performance, 18-hour battery life, and MIL-STD-810G durability,
-                        this is the laptop that serious professionals choose.
+                        L'ordinateur portable professionnel ultime - léger, puissant et conçu pour durer.
+                        Avec des performances exceptionnelles, 18 heures d'autonomie et une durabilité MIL-STD-810G.
                     </p>
-                    <p><strong>Price:</strong> $1,799.99</p>
-                    <p><strong>Best for:</strong> Business professionals, entrepreneurs, remote workers</p>
-                    <a href="laptop_001_review.html" class="btn">Read Full Review →</a>
+                    <a href="laptop_001_review.html" class="btn">Lire le Test Complet →</a>
                 </div>
 
                 <div class="review-card">
-                    <h2>Premium Laptop Review #2</h2>
-                    <div class="rating">⭐⭐⭐⭐⭐ Rating Coming Soon</div>
+                    <h2>MacBook Pro 14 M3</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€1,999</p>
                     <p class="excerpt">
-                        Another high-quality laptop review with detailed analysis of performance,
-                        battery life, build quality, and value for money.
+                        La puissance de la puce Apple M3 dans un format compact. Écran Liquid Retina XDR et jusqu'à 17 heures d'autonomie.
                     </p>
-                    <a href="laptop_002_review.html" class="btn">Read Full Review →</a>
+                    <a href="laptop_002_review.html" class="btn">Lire le Test Complet →</a>
                 </div>
 
-                <div class="review-card coming-soon">
-                    <h3>📱 More Reviews Coming Soon!</h3>
-                    <p>We're constantly testing and reviewing the latest tech products.</p>
-                    <p style="margin-top: 15px;">
-                        <strong>Upcoming reviews:</strong><br>
-                        Headphones • Monitors • Keyboards • Mice • Tablets • More Laptops
+                <div class="review-card">
+                    <h2>Dell XPS 15 9530</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€1,899</p>
+                    <p class="excerpt">
+                        Un laptop puissant avec Intel Core i7-13700H et NVIDIA RTX 4050. Parfait pour la création de contenu.
                     </p>
+                    <a href="laptop_003_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>HP Spectre x360 14</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€1,499</p>
+                    <p class="excerpt">
+                        Un 2-en-1 convertible de luxe avec écran tactile WUXGA+ et stockage SSD de 1 To.
+                    </p>
+                    <a href="laptop_004_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>ASUS ROG Zephyrus G14</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€1,699</p>
+                    <p class="excerpt">
+                        Un laptop gaming compact avec AMD Ryzen 9 et NVIDIA RTX 4060. Écran QHD 165Hz.
+                    </p>
+                    <a href="laptop_005_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Microsoft Surface Laptop 5</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€1,399</p>
+                    <p class="excerpt">
+                        Design élégant avec écran tactile PixelSense 13.5 pouces et performances solides.
+                    </p>
+                    <a href="laptop_006_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- HEADPHONES -->
+        <div class="category-section">
+            <h2 class="category-title">🎧 Casques Audio</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h2>Sony WH-1000XM5</h2>
+                    <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+                    <p class="price">€399</p>
+                    <p class="excerpt">
+                        Le leader de la réduction de bruit active avec 30 heures d'autonomie et connexion multipoint.
+                    </p>
+                    <a href="headphone_001_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Apple AirPods Pro 2</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€279</p>
+                    <p class="excerpt">
+                        Réduction de bruit active avec puce H2 et Audio Spatial. 6h d'autonomie + 24h avec l'étui.
+                    </p>
+                    <a href="headphone_002_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Bose QuietComfort 45</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€329</p>
+                    <p class="excerpt">
+                        Confort exceptionnel et excellente réduction de bruit pour les longs trajets.
+                    </p>
+                    <a href="headphone_003_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Sennheiser Momentum 4</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€349</p>
+                    <p class="excerpt">
+                        Qualité audio audiophile avec jusqu'à 60 heures d'autonomie.
+                    </p>
+                    <a href="headphone_004_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Beats Studio Pro</h2>
+                    <div class="rating">⭐⭐⭐⭐ 4/5</div>
+                    <p class="price">€379</p>
+                    <p class="excerpt">
+                        Design moderne avec Audio Spatial personnalisé et USB-C audio lossless.
+                    </p>
+                    <a href="headphone_005_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MONITORS -->
+        <div class="category-section">
+            <h2 class="category-title">🖥️ Moniteurs</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h2>LG UltraWide 34WN80C-B</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€499</p>
+                    <p class="excerpt">
+                        Écran 34 pouces UltraWide QHD (3440x1440) avec USB-C 60W pour une productivité maximale.
+                    </p>
+                    <a href="monitor_001_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Dell UltraSharp U2723DE</h2>
+                    <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+                    <p class="price">€549</p>
+                    <p class="excerpt">
+                        Moniteur QHD 27 pouces avec hub USB-C intégré et précision des couleurs professionnelle.
+                    </p>
+                    <a href="monitor_002_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Samsung Odyssey G7 32"</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€599</p>
+                    <p class="excerpt">
+                        Moniteur gaming incurvé QLED 240Hz avec 1ms de temps de réponse et G-Sync.
+                    </p>
+                    <a href="monitor_003_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- KEYBOARDS -->
+        <div class="category-section">
+            <h2 class="category-title">⌨️ Claviers</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h2>Logitech MX Keys</h2>
+                    <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+                    <p class="price">€119</p>
+                    <p class="excerpt">
+                        Clavier sans fil premium avec touches rétroéclairées intelligentes et frappe précise.
+                    </p>
+                    <a href="keyboard_001_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Keychron K2 V2</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€89</p>
+                    <p class="excerpt">
+                        Clavier mécanique compact 75% avec switchs hot-swappables et rétroéclairage RGB.
+                    </p>
+                    <a href="keyboard_002_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Corsair K70 RGB PRO</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€169</p>
+                    <p class="excerpt">
+                        Clavier gaming mécanique avec switchs Cherry MX et repose-poignet détachable.
+                    </p>
+                    <a href="keyboard_003_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- MICE -->
+        <div class="category-section">
+            <h2 class="category-title">🖱️ Souris</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h2>Logitech MX Master 3S</h2>
+                    <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+                    <p class="price">€109</p>
+                    <p class="excerpt">
+                        La souris sans fil ultime pour la productivité avec défilement MagSpeed électromagnétique.
+                    </p>
+                    <a href="mouse_001_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Razer DeathAdder V3</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€79</p>
+                    <p class="excerpt">
+                        Souris gaming légère (59g) avec capteur optique Focus Pro 30K et switchs Gen-3.
+                    </p>
+                    <a href="mouse_002_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TABLETS -->
+        <div class="category-section">
+            <h2 class="category-title">📱 Tablettes</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h2>iPad Pro 12.9 M2</h2>
+                    <div class="rating">⭐⭐⭐⭐⭐ 5/5</div>
+                    <p class="price">€1,449</p>
+                    <p class="excerpt">
+                        La tablette la plus puissante avec puce M2, écran Liquid Retina XDR et compatibilité Apple Pencil.
+                    </p>
+                    <a href="tablet_001_review.html" class="btn">Lire le Test Complet →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Samsung Galaxy Tab S9</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="price">€899</p>
+                    <p class="excerpt">
+                        Tablette Android premium avec écran AMOLED 120Hz, S Pen inclus et certification IP68.
+                    </p>
+                    <a href="tablet_002_review.html" class="btn">Lire le Test Complet →</a>
                 </div>
             </div>
         </div>
 
         <footer>
             <p><strong>Tech Reviews Hub</strong></p>
-            <p>Honest, in-depth reviews to guide your tech purchases</p>
+            <p>Tests honnêtes et approfondis pour guider vos achats technologiques</p>
             <p style="font-size: 0.9em; opacity: 0.8; margin-top: 15px;">
-                <strong>Disclosure:</strong> This site contains affiliate links.
-                We may earn a commission at no extra cost to you when you make a purchase through our links.
+                <strong>Transparence :</strong> Ce site contient des liens affiliés vers Amazon.fr.
+                Nous pouvons recevoir une commission sans frais supplémentaires pour vous lorsque vous effectuez un achat via nos liens.
             </p>
             <p style="margin-top: 15px; font-size: 0.9em;">
-                © 2025 Tech Reviews Hub. All rights reserved.
+                © 2025 Tech Reviews Hub. Tous droits réservés.
             </p>
         </footer>
     </div>
