@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Reviews Hub - Expert Product Reviews & Buying Guides</title>
+    <meta name="description" content="In-depth technology product reviews to help you make informed purchasing decisions. Expert analysis of laptops, headphones, monitors, and more.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: #888;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        .reviews-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .review-card {
+            background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .review-card h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .review-card .rating {
+            font-size: 1.3em;
+            color: #ffa500;
+            margin: 10px 0;
+        }
+
+        .review-card .excerpt {
+            color: #555;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .review-card .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .review-card .btn:hover {
+            background: #764ba2;
+        }
+
+        .coming-soon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .coming-soon h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .reviews-grid {
+                grid-template-columns: 1fr;
+            }
+            header, .reviews-section {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 Tech Reviews Hub</h1>
+            <p class="subtitle">Expert Product Reviews & Buying Guides</p>
+            <p class="tagline">Helping you make informed decisions on your next tech purchase</p>
+        </header>
+
+        <div class="reviews-section">
+            <h2 class="section-title">Latest Reviews</h2>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <h2>Lenovo ThinkPad X1 Carbon Gen 11</h2>
+                    <div class="rating">⭐⭐⭐⭐✨ 4.5/5</div>
+                    <p class="excerpt">
+                        The ultimate business laptop - lightweight, powerful, and built to last.
+                        With exceptional performance, 18-hour battery life, and MIL-STD-810G durability,
+                        this is the laptop that serious professionals choose.
+                    </p>
+                    <p><strong>Price:</strong> $1,799.99</p>
+                    <p><strong>Best for:</strong> Business professionals, entrepreneurs, remote workers</p>
+                    <a href="laptop_001_review.html" class="btn">Read Full Review →</a>
+                </div>
+
+                <div class="review-card">
+                    <h2>Premium Laptop Review #2</h2>
+                    <div class="rating">⭐⭐⭐⭐⭐ Rating Coming Soon</div>
+                    <p class="excerpt">
+                        Another high-quality laptop review with detailed analysis of performance,
+                        battery life, build quality, and value for money.
+                    </p>
+                    <a href="laptop_002_review.html" class="btn">Read Full Review →</a>
+                </div>
+
+                <div class="review-card coming-soon">
+                    <h3>📱 More Reviews Coming Soon!</h3>
+                    <p>We're constantly testing and reviewing the latest tech products.</p>
+                    <p style="margin-top: 15px;">
+                        <strong>Upcoming reviews:</strong><br>
+                        Headphones • Monitors • Keyboards • Mice • Tablets • More Laptops
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>Tech Reviews Hub</strong></p>
+            <p>Honest, in-depth reviews to guide your tech purchases</p>
+            <p style="font-size: 0.9em; opacity: 0.8; margin-top: 15px;">
+                <strong>Disclosure:</strong> This site contains affiliate links.
+                We may earn a commission at no extra cost to you when you make a purchase through our links.
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                © 2025 Tech Reviews Hub. All rights reserved.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
