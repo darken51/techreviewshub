@@ -268,6 +268,75 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+        .site-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .site-logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        .site-logo:hover {
+            opacity: 0.9;
+        }
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        .main-nav a:hover {
+            opacity: 0.8;
+        }
+        .breadcrumbs {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+        .breadcrumbs a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .breadcrumbs a:hover {
+            text-decoration: underline;
+        }
+        .breadcrumbs span {
+            color: #333;
+        }
+        .back-to-home {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #ecf0f1;
+            text-align: center;
+        }
+        .btn-home {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn-home:hover {
+            background: #764ba2;
+        }
         @media (max-width: 768px) {
             .container {
                 padding: 30px 20px;
@@ -278,11 +347,37 @@
             .pros-cons {
                 grid-template-columns: 1fr;
             }
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-nav {
+                margin-top: 10px;
+            }
+            .main-nav a {
+                margin: 0 10px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="site-logo">🎯 Tech Reviews Hub</a>
+            <nav class="main-nav">
+                <a href="index.html">Accueil</a>
+                <a href="index.html#laptops">Laptops</a>
+                <a href="index.html#headphones">Casques</a>
+                <a href="index.html#monitors">Moniteurs</a>
+            </nav>
+        </div>
+    </header>
+
     <div class="container">
+        <div class="breadcrumbs">
+            <a href="index.html">Accueil</a> > <a href="index.html#laptops">Laptops</a> > <span>HP Spectre x360 14</span>
+        </div>
         <h1>Test HP Spectre x360 14 (2024) : Le Roi des Convertibles 2-en-1 ?</h1>
 
         <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08286698.png" alt="HP Spectre x360 14" class="product-image">
@@ -505,6 +600,10 @@
 
         <div class="disclosure">
             <strong>⚠️ Transparence :</strong> Ce site contient des liens affiliés Amazon. Si vous effectuez un achat via nos liens, nous pouvons recevoir une commission sans frais supplémentaires pour vous. Cela nous permet de continuer à produire des tests indépendants et détaillés. Notre avis reste 100% objectif et non influencé par ces partenariats.
+        </div>
+
+        <div class="back-to-home">
+            <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
 </body>
