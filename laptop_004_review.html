@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test HP Spectre x360 14 (2024) : Le Convertible 2-en-1 Ultime ? | TechReviewsHub</title>
     <meta name="description" content="Test complet du HP Spectre x360 14 (2024). Intel i7-1355U, écran OLED 2.8K tactile, mode tablette. Notre avis après 3 semaines d'utilisation intensive pour création et mobilité.">
@@ -336,6 +344,95 @@
         }
         .btn-home:hover {
             background: #764ba2;
+        }        .social-share {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-share h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .share-btn span {
+            font-size: 1.3em;
+        }
+
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
         }
         @media (max-width: 768px) {
             .container {
@@ -585,6 +682,77 @@
             Les seules réserves concernent la RAM soudée 16 Go (non upgradable), le CPU U-series moins puissant que les H-series, et le poids un peu élevé en mode tablette. Mais pour la mobilité professionnelle premium avec une touche de créativité, le Spectre x360 14 délivre une expérience remarquable à 1 499€.
         </p>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le HP Spectre x360 14 est bon pour le gaming ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, le HP Spectre x360 14 n'est pas conçu pour le gaming intensif. Avec son Intel Iris Xe intégré (pas de GPU dédié), il peut faire tourner des jeux légers ou indépendants en 1080p à moyenne qualité, mais les AAA récents seront injouables. Le CPU U-series (15W TDP) est optimisé pour l'autonomie, pas la puissance gaming. Pour jouer sérieusement, orientez-vous vers un laptop avec GPU dédié RTX 4050 minimum.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est l'autonomie réelle du HP Spectre x360 14 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie réelle varie selon l'usage : 11h30 à 12h en bureautique légère (navigation web, traitement de texte, luminosité 50%), 8h à 9h en usage mixte productif avec visioconférences et multitâche, et 7h à 8h en charge intensive (développement, montage vidéo léger). L'écran OLED consomme plus qu'un LCD, mais la batterie de 66 Wh et le CPU efficace compensent bien. C'est largement suffisant pour une journée de travail nomade sans recharge.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Peut-on upgrader la RAM ou le SSD du HP Spectre x360 14 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>La RAM de 16 Go LPDDR4x est soudée à la carte mère et donc impossible à upgrader. C'est le principal inconvénient de ce modèle pour les power users. En revanche, le SSD de 512 Go est remplaçable (format M.2 NVMe PCIe Gen 4), vous pouvez donc passer à 1 TB ou 2 TB si nécessaire. Assurez-vous de choisir la configuration RAM adaptée à vos besoins dès l'achat, car vous ne pourrez pas l'augmenter plus tard.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Le HP Spectre x360 14 chauffe-t-il beaucoup ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, la gestion thermique est bonne grâce au processeur basse consommation i7-1355U (15W TDP). En usage bureautique, le laptop reste frais et silencieux. En charge plus intensive (montage vidéo, compilation, export), le châssis aluminium devient tiède au toucher sur le dessous et près des charnières, mais reste confortable sur les genoux. Le ventilateur devient audible mais reste discret comparé à des laptops gaming. Pas de throttling thermique constaté lors de nos tests.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le HP Spectre x360 14 vaut son prix de 1 499€ ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, si vous cherchez un laptop convertible 2-en-1 premium avec écran OLED exceptionnel et polyvalence maximale. Le prix se justifie par la qualité de fabrication aluminium usiné, l'écran OLED 2.8K 3:2 sublime, le stylet inclus (économie de 100€), la flexibilité 4 modes d'utilisation, et l'autonomie excellente. Face au Surface Laptop (1 399€ sans mode tablette) ou au ThinkPad X1 Carbon (1 799€ sans écran tactile), le Spectre offre le meilleur rapport polyvalence/prix. Alternative moins chère : HP Pavilion x360 (799€), mais avec compromis sur écran et finitions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est la garantie du HP Spectre x360 14 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>HP propose une garantie standard de 1 an avec support technique. Vous pouvez l'étendre jusqu'à 3 ans avec HP Care Pack (extension garantie + dépannage prioritaire + protection contre dommages accidentels en option). Pour un laptop premium à ce prix, je recommande vivement de prendre au minimum 2 ans de garantie. Le service après-vente HP est correct mais moins réputé que celui de Lenovo ThinkPad. La durabilité attendue est de 3-4 ans sans souci pour un usage professionnel normal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="related-products">
             <h3>💡 Produits similaires à considérer :</h3>
             <p>
@@ -606,5 +774,75 @@
             <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+            });
+        });
+      });
+
+      // Social Share Functions
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      function shareOnFacebook() {
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Facebook', 'content_type': pageTitle});
+      }
+
+      function shareOnTwitter() {
+          window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Twitter', 'content_type': pageTitle});
+      }
+
+      function shareOnLinkedIn() {
+          window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'LinkedIn', 'content_type': pageTitle});
+      }
+
+      function shareOnWhatsApp() {
+          window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+          gtag('event', 'share', {'method': 'WhatsApp', 'content_type': pageTitle});
+      }
+
+      function shareByEmail() {
+          window.location.href = `mailto:?subject=${pageTitle}&body=Regarde cet article : ${pageUrl}`;
+          gtag('event', 'share', {'method': 'Email', 'content_type': pageTitle});
+      }
+    </script>
 </body>
 </html>

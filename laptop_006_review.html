@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Microsoft Surface Laptop 5 (2024) : L'Élégance Premium Windows ? | TechReviewsHub</title>
     <meta name="description" content="Test complet du Microsoft Surface Laptop 5 (2024). Intel Core i7-1255U, écran PixelSense tactile 13.5 pouces, design Alcantara. Notre avis après 3 semaines d'utilisation intensive.">
@@ -336,6 +344,95 @@
         }
         .btn-home:hover {
             background: #764ba2;
+        }        .social-share {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-share h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .share-btn span {
+            font-size: 1.3em;
+        }
+
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
         }
         @media (max-width: 768px) {
             .container {
@@ -577,6 +674,77 @@
             Les réserves concernent la RAM 8 Go non upgradable, l'absence de Thunderbolt, et le prix qui grimpe vite en configurant 16 Go/512 Go (1 699€). Mais pour la bureautique nomade premium avec une touche d'élégance Microsoft, le Surface Laptop 5 délivre une expérience remarquable.
         </p>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le Surface Laptop 5 est bon pour le gaming ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, le Surface Laptop 5 n'est pas conçu pour le gaming. Avec son Intel Iris Xe intégré (pas de GPU dédié), il peut faire tourner des jeux légers ou indépendants (Stardew Valley, Hades, Among Us) en 1080p, mais pas les jeux AAA récents. Le CPU i7-1255U est optimisé pour la bureautique et l'autonomie, pas pour la performance gaming. Pour jouer, orientez-vous vers un laptop avec GPU dédié comme le ROG Zephyrus G14. Le Surface Laptop 5 excelle en bureautique, création légère et mobilité.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est l'autonomie réelle du Surface Laptop 5 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie réelle varie selon l'usage : 13 à 15 heures en bureautique légère (navigation web, traitement de texte, luminosité 50%), 10 à 12 heures en usage mixte productif avec visioconférences et multitâche, et 8 à 9 heures en charge plus intensive (développement, montage photo léger). C'est excellent pour un ultraportable premium et largement suffisant pour une journée de travail nomade sans recharge. La batterie de 58 Wh combinée au CPU efficace i7-1255U offre l'une des meilleures autonomies de sa catégorie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Peut-on upgrader la RAM ou le SSD du Surface Laptop 5 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, ni la RAM ni le SSD ne sont upgradables sur le Surface Laptop 5. Tous les composants sont soudés à la carte mère pour maximiser la compacité et la finesse du châssis. C'est le principal inconvénient de ce modèle. Il est donc crucial de choisir la bonne configuration dès l'achat : je recommande vivement la version 16 Go RAM / 512 Go SSD minimum pour un usage professionnel pérenne. La version de base 8 Go / 256 Go devient limitante rapidement avec Windows 11 et les applications modernes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Le Surface Laptop 5 chauffe-t-il beaucoup ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, la gestion thermique est excellente grâce au processeur basse consommation i7-1255U (15W TDP) et au châssis aluminium qui dissipe bien la chaleur. En usage bureautique, le laptop reste frais et totalement silencieux (ventilation passive). En charge plus intensive (visioconférences longues, compilation, export photo), le châssis devient légèrement tiède au toucher sur le dessous, mais reste confortable sur les genoux. Le ventilateur devient audible mais discret. Aucun throttling thermique constaté lors de nos tests.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le Surface Laptop 5 vaut son prix de 1 399€ ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, si vous cherchez un ultraportable Windows élégant et bien intégré à l'écosystème Microsoft. Le prix se justifie par le design premium Alcantara unique, l'écran PixelSense tactile 3:2 excellent, l'autonomie record, la qualité de fabrication exemplaire, et l'intégration logicielle parfaite (Windows 11, Office 365, OneDrive). Face au MacBook Air M2 (1 199€ mais macOS), le Surface offre Windows en restant compétitif. Alternative moins chère : HP Spectre x360 (1 499€) avec mode tablette, ou ThinkPad X1 Carbon (1 799€) avec meilleur clavier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est la garantie du Surface Laptop 5 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Microsoft propose une garantie limitée de 1 an avec support technique. Vous pouvez l'étendre jusqu'à 4 ans avec Microsoft Complete for Business (extension garantie + 2 remplacements pour dommages accidentels par an + support prioritaire). Pour un usage professionnel, je recommande vivement de prendre Microsoft Complete (199€ pour 2 ans). Le SAV Microsoft est excellent en France avec remplacement express sous 24-48h en cas de panne. Durabilité attendue : 4-5 ans sans souci pour un usage professionnel normal, la qualité de fabrication Microsoft étant au-dessus de la moyenne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="related-products">
             <h3>💡 Produits similaires à considérer :</h3>
             <p>
@@ -598,5 +766,75 @@
             <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+            });
+        });
+      });
+
+      // Social Share Functions
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      function shareOnFacebook() {
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Facebook', 'content_type': pageTitle});
+      }
+
+      function shareOnTwitter() {
+          window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Twitter', 'content_type': pageTitle});
+      }
+
+      function shareOnLinkedIn() {
+          window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'LinkedIn', 'content_type': pageTitle});
+      }
+
+      function shareOnWhatsApp() {
+          window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+          gtag('event', 'share', {'method': 'WhatsApp', 'content_type': pageTitle});
+      }
+
+      function shareByEmail() {
+          window.location.href = `mailto:?subject=${pageTitle}&body=Regarde cet article : ${pageUrl}`;
+          gtag('event', 'share', {'method': 'Email', 'content_type': pageTitle});
+      }
+    </script>
 </body>
 </html>

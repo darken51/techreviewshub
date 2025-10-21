@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test ASUS ROG Zephyrus G14 (2024) : Le Laptop Gaming Compact Ultime ? | TechReviewsHub</title>
     <meta name="description" content="Test complet de l'ASUS ROG Zephyrus G14 (2024). AMD Ryzen 9 7940HS, RTX 4060, écran 165Hz WQXGA. Notre avis après 3 semaines de gaming et création intensive.">
@@ -336,6 +344,95 @@
         }
         .btn-home:hover {
             background: #764ba2;
+        }        .social-share {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-share h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .share-btn span {
+            font-size: 1.3em;
+        }
+
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
         }
         @media (max-width: 768px) {
             .container {
@@ -590,6 +687,77 @@
             Les seules réserves : les ventilateurs audibles en charge (inévitable en format compact), l'écran IPS correct sans être OLED, et le prix de 1 699€. Mais pour la polyvalence gaming/création/mobilité à ce niveau, le Zephyrus G14 mérite pleinement son statut d'icône du gaming portable.
         </p>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que l'ASUS ROG Zephyrus G14 est bon pour le gaming ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, absolument ! Avec sa NVIDIA RTX 4060 8 Go et son AMD Ryzen 9 7940HS, le Zephyrus G14 fait tourner les jeux AAA récents en 1440p à 60-120 FPS selon les réglages (Cyberpunk 2077, Hogwarts Legacy, Baldur's Gate 3). L'écran 165Hz offre une fluidité excellente pour les FPS compétitifs. C'est un vrai laptop gaming performant malgré son format compact de 14 pouces et 1,65 kg. Seule limite : pour du ray tracing maximal en 1440p, une RTX 4070/4080 serait nécessaire.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est l'autonomie réelle du Zephyrus G14 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie varie énormément selon l'usage. En mode silencieux pour la bureautique (navigation web, traitement de texte, luminosité 50%), vous obtiendrez 8 à 10 heures. En usage mixte avec développement et applications légères, comptez 6 à 7 heures. En gaming sur batterie, l'autonomie chute à 1h30-2h (normal pour un laptop gaming). Pour maximiser l'autonomie, utilisez le mode iGPU uniquement (désactive la RTX 4060) et vous atteindrez facilement 10h en bureautique.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Peut-on upgrader la RAM ou le SSD du Zephyrus G14 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>La RAM de 16 Go DDR5 est soudée et non upgradable sur ce modèle (limitation du format compact). En revanche, le SSD de 1 TB est remplaçable (format M.2 NVMe PCIe 4.0), vous pouvez donc passer à 2 TB ou 4 TB si besoin de stockage supplémentaire. 16 Go de RAM suffisent pour le gaming et la création de contenu léger, mais les professionnels travaillant sur de gros projets (rendu 3D, montage vidéo 4K multi-pistes) préféreront un modèle avec 32 Go.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Le Zephyrus G14 chauffe-t-il beaucoup ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>En gaming intensif, oui, c'est inévitable pour un laptop aussi compact avec une RTX 4060. Le CPU atteint 85-90°C et le GPU 75-80°C en charge maximale, ce qui est normal et sûr (throttling thermique à 95°C). ASUS a intégré un système de refroidissement Liquid Metal performant qui contient bien la chaleur. Le châssis devient chaud au toucher sur le dessus du clavier et à l'arrière, mais les zones de repos (pavé tactile, repose-poignets) restent acceptables. En bureautique, le laptop reste frais et silencieux.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le Zephyrus G14 vaut son prix de 1 699€ ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, si vous cherchez le meilleur compromis gaming/mobilité du marché. À 1 699€, il offre des performances gaming AAA (RTX 4060) dans un châssis ultraportable de 1,65 kg - c'est unique. Face aux concurrents (Razer Blade 14 à 2 299€, Lenovo Legion Slim 5 à 1 499€ mais plus lourd), le G14 offre le meilleur équilibre prix/performances/portabilité. Le prix se justifie par la qualité de fabrication premium, l'écran 165Hz calibré, et la polyvalence gaming + création + mobilité. Alternative moins chère : le MSI Cyborg 14 (1 199€) avec RTX 4050, mais construction plastique.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est la garantie de l'ASUS ROG Zephyrus G14 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>ASUS propose une garantie standard de 2 ans sur les laptops ROG (contre 1 an pour d'autres marques), avec support technique et retour atelier en cas de panne. Vous pouvez l'étendre jusqu'à 4 ans avec ASUS Premium Care (extension garantie + protection contre dommages accidentels). Le SAV ASUS est correct en France avec des délais de réparation de 10-15 jours ouvrés en moyenne. La durabilité des ROG Zephyrus est bonne : 4-5 ans d'utilisation sans souci si bien entretenu (nettoyage ventilateurs, renouvellement pâte thermique tous les 2 ans).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="related-products">
             <h3>💡 Produits similaires à considérer :</h3>
             <p>
@@ -611,5 +779,75 @@
             <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+            });
+        });
+      });
+
+      // Social Share Functions
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      function shareOnFacebook() {
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Facebook', 'content_type': pageTitle});
+      }
+
+      function shareOnTwitter() {
+          window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Twitter', 'content_type': pageTitle});
+      }
+
+      function shareOnLinkedIn() {
+          window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'LinkedIn', 'content_type': pageTitle});
+      }
+
+      function shareOnWhatsApp() {
+          window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+          gtag('event', 'share', {'method': 'WhatsApp', 'content_type': pageTitle});
+      }
+
+      function shareByEmail() {
+          window.location.href = `mailto:?subject=${pageTitle}&body=Regarde cet article : ${pageUrl}`;
+          gtag('event', 'share', {'method': 'Email', 'content_type': pageTitle});
+      }
+    </script>
 </body>
 </html>

@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test MacBook Pro 14 M3 2024 : La Perfection Apple au Meilleur Prix ? | TechReviewsHub</title>
     <meta name="description" content="Test complet du MacBook Pro 14 pouces M3 2024. Performance exceptionnelle, écran Liquid Retina XDR, autonomie record. Notre avis détaillé après 3 semaines d'utilisation intensive.">
@@ -336,6 +344,95 @@
         }
         .btn-home:hover {
             background: #764ba2;
+        }        .social-share {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-share h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .share-btn span {
+            font-size: 1.3em;
+        }
+
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
         }
         @media (max-width: 768px) {
             .container {
@@ -563,6 +660,77 @@
             Les seuls freins réels sont le prix (qui grimpe vite à 2 500€+ en config confortable) et l'impossibilité d'upgrader RAM/SSD. Mais pour qui recherche le meilleur laptop polyvalent du marché, capable d'exceller en mobilité comme en studio, le MacBook Pro 14 M3 mérite pleinement sa réputation d'excellence.
         </p>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le MacBook Pro 14 M3 est bon pour le gaming ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le MacBook Pro 14 M3 peut faire tourner des jeux modernes grâce à son GPU intégré performant, mais ce n'est pas un laptop gaming dédié. Il gère correctement des jeux AAA récents en 1080p-1440p à paramètres moyens (Resident Evil Village, Baldur's Gate 3), et excelle sur les jeux optimisés Apple Silicon. Cependant, pour un gaming intensif, un PC Windows avec GPU dédié (RTX 4060/4070) reste plus approprié et moins cher. Le MacBook Pro brille surtout en création de contenu (vidéo 4K/8K, 3D, musique).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est l'autonomie réelle du MacBook Pro 14 M3 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie varie selon l'usage : 18-22 heures en bureautique légère et navigation web, 12-15 heures en usage mixte professionnel, 8-10 heures en montage vidéo 4K, et 6-8 heures en export/rendu vidéo intensif. C'est exceptionnel pour un laptop de cette puissance. La puce M3 et l'écran Liquid Retina XDR optimisé permettent une efficacité énergétique record. Vous pouvez facilement tenir 2 jours de travail bureautique sans recharge.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Peut-on upgrader la RAM ou le SSD du MacBook Pro 14 M3 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, absolument pas. La RAM et le SSD sont tous deux soudés à la carte mère (unified memory architecture d'Apple). Il est donc crucial de choisir la bonne configuration dès l'achat : minimum 16 GB de RAM (suffisant pour la bureautique/photo), 32 GB recommandés pour la vidéo 4K/développement, et 64-128 GB pour la vidéo 8K ou les gros projets 3D. Pour le stockage, prévoyez large : 512 GB minimum (étroit), 1 TB idéal, 2 TB+ pour les créatifs manipulant beaucoup de médias.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Le MacBook Pro 14 M3 chauffe-t-il beaucoup ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, la gestion thermique est excellente. En usage bureautique et navigation, le MacBook reste frais et totalement silencieux (ventilateurs éteints). Même en charge intensive (export vidéo 4K, rendu 3D), le châssis en aluminium reste confortable au toucher et les ventilateurs restent discrets (bien moins bruyants qu'un PC Windows équivalent). La puce M3 en 3nm génère peu de chaleur tout en maintenant des performances élevées. Pas de throttling thermique même en usage prolongé intensif.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le MacBook Pro 14 M3 vaut son prix de 1 999€ ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, si vous êtes créatif ou professionnel exigeant et déjà dans l'écosystème Apple. Le prix se justifie par l'écran Liquid Retina XDR exceptionnel, les performances de la puce M3, l'autonomie record, la qualité de fabrication premium, et la longévité (5-7 ans d'utilisation facile). Attention : le prix grimpe vite (2 500€+ en config 32GB/1TB). Alternatives moins chères : ThinkPad X1 Carbon (1 799€) pour la bureautique, Dell XPS 15 (1 899€) pour la polyvalence Windows, ou ASUS Zephyrus G14 (1 699€) pour gaming + création.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est la garantie du MacBook Pro 14 M3 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Apple propose une garantie standard de 1 an avec support technique téléphonique 90 jours. Vous pouvez étendre à 3 ans avec AppleCare+ (279€), qui inclut aussi 2 réparations accidentelles/an (écran cassé, liquide renversé) moyennant franchise. Pour un laptop à 2 000€+, AppleCare+ est vivement recommandé : réparations hors garantie très coûteuses chez Apple (écran 600€+, carte mère 1 000€+). Le SAV Apple est réputé rapide et efficace via Apple Store ou réparateurs agréés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="related-products">
             <h3>💡 Produits similaires à considérer :</h3>
             <p>
@@ -584,5 +752,75 @@
             <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+            });
+        });
+      });
+
+      // Social Share Functions
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      function shareOnFacebook() {
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Facebook', 'content_type': pageTitle});
+      }
+
+      function shareOnTwitter() {
+          window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Twitter', 'content_type': pageTitle});
+      }
+
+      function shareOnLinkedIn() {
+          window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'LinkedIn', 'content_type': pageTitle});
+      }
+
+      function shareOnWhatsApp() {
+          window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+          gtag('event', 'share', {'method': 'WhatsApp', 'content_type': pageTitle});
+      }
+
+      function shareByEmail() {
+          window.location.href = `mailto:?subject=${pageTitle}&body=Regarde cet article : ${pageUrl}`;
+          gtag('event', 'share', {'method': 'Email', 'content_type': pageTitle});
+      }
+    </script>
 </body>
 </html>

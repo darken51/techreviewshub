@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparatifs Tech 2025 | Tech Reviews Hub</title>
+    <meta name="description" content="Comparatifs détaillés des meilleurs produits tech 2025. MacBook vs ThinkPad, Sony vs Bose, iPad vs Galaxy Tab - trouvez le produit parfait pour vos besoins.">
+    <meta name="keywords" content="comparatifs tech 2025, vs, comparison, laptop, casque, tablette, souris, meilleur choix">
+    <link rel="canonical" href="https://darken51.github.io/techreviewshub/comparatifs/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Comparatifs Tech 2025 | Tech Reviews Hub">
+    <meta property="og:description" content="Tous nos comparatifs pour vous aider à choisir le meilleur produit tech">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.3em;
+            color: #666;
+            margin-top: 10px;
+        }
+        .site-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 15px 0;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .site-logo {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+        .comparisons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .comparison-card {
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-top: 4px solid #667eea;
+        }
+        .comparison-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.3);
+        }
+        .comparison-card h2 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        .comparison-card .category {
+            display: inline-block;
+            background: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .comparison-card .excerpt {
+            color: #555;
+            margin: 15px 0;
+            line-height: 1.7;
+        }
+        .comparison-card .key-points {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+        .comparison-card .key-points li {
+            color: #666;
+            margin: 8px 0;
+            font-size: 0.95em;
+        }
+        .comparison-card .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s;
+        }
+        .comparison-card .btn:hover {
+            transform: translateX(5px);
+        }
+        .back-home {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-top: 40px;
+            text-align: center;
+        }
+        .btn-home {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn-home:hover {
+            background: #764ba2;
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .comparisons-grid {
+                grid-template-columns: 1fr;
+            }
+            header {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="../index.html" class="site-logo">Tech Reviews Hub</a>
+            <nav class="main-nav">
+                <a href="../index.html">Accueil</a>
+                <a href="index.html">Comparatifs</a>
+                <a href="../blog/index.html">Blog</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1>Comparatifs Tech 2025</h1>
+            <p class="subtitle">Face-à-face détaillés pour vous aider à choisir le meilleur produit</p>
+        </header>
+
+        <div class="comparisons-grid">
+            <!-- Comparison 1 -->
+            <div class="comparison-card">
+                <span class="category">LAPTOPS</span>
+                <h2>MacBook Pro M3 vs ThinkPad X1 Carbon</h2>
+                <p class="excerpt">
+                    Le duel des titans professionnels : macOS vs Windows, puissance M3 vs légèreté extrême.
+                    Quel est le meilleur laptop pour votre workflow en 2025 ?
+                </p>
+                <ul class="key-points">
+                    <li>Performance : M3 domine, mais i7 excellent pour 80% des usages</li>
+                    <li>Écran : Liquid Retina XDR imbattable vs IPS correct</li>
+                    <li>Poids : ThinkPad 430g plus léger (1,12 kg)</li>
+                    <li>Clavier : ThinkPad légendaire vs Magic Keyboard</li>
+                    <li>Prix : ThinkPad 200€ moins cher avec 16 GB RAM</li>
+                </ul>
+                <a href="macbook-pro-m3-vs-thinkpad-x1-carbon.html" class="btn">Voir le comparatif complet</a>
+            </div>
+
+            <!-- Comparison 2 -->
+            <div class="comparison-card">
+                <span class="category">CASQUES AUDIO</span>
+                <h2>Sony WH-1000XM5 vs Bose QuietComfort 45</h2>
+                <p class="excerpt">
+                    Les deux rois de l'ANC s'affrontent : Sony mise sur la technologie ultime,
+                    Bose sur le confort légendaire. Verdict après 3 mois de tests.
+                </p>
+                <ul class="key-points">
+                    <li>ANC : Sony légèrement meilleur (8 micros vs 6)</li>
+                    <li>Confort : Bose imbattable pour vols long-courriers</li>
+                    <li>Audio : Sony plus détaillé, Bose plus chaleureux</li>
+                    <li>Autonomie : Sony 30h vs Bose 24h</li>
+                    <li>Prix : Bose 70€ moins cher (329€ vs 399€)</li>
+                </ul>
+                <a href="sony-wh1000xm5-vs-bose-qc45.html" class="btn">Voir le comparatif complet</a>
+            </div>
+
+            <!-- Comparison 3 -->
+            <div class="comparison-card">
+                <span class="category">TABLETTES</span>
+                <h2>iPad Pro 12.9 M2 vs Galaxy Tab S9 Ultra</h2>
+                <p class="excerpt">
+                    iOS vs Android au sommet : iPad Pro pour créatifs vs Galaxy Tab pour productivité.
+                    Quelle tablette premium choisir pour remplacer votre laptop ?
+                </p>
+                <ul class="key-points">
+                    <li>Performance : M2 écrase en création (30-40% plus rapide)</li>
+                    <li>Écran : Mini-LED XDR vs AMOLED 14.6" géant</li>
+                    <li>Productivité : DeX mode PC vs Stage Manager limité</li>
+                    <li>Stylet : S Pen inclus vs Apple Pencil +149€</li>
+                    <li>Prix : Galaxy Tab 150€ moins cher + 12 GB RAM</li>
+                </ul>
+                <a href="ipad-pro-vs-galaxy-tab-s9-ultra.html" class="btn">Voir le comparatif complet</a>
+            </div>
+
+            <!-- Comparison 4 -->
+            <div class="comparison-card">
+                <span class="category">LAPTOPS</span>
+                <h2>Dell XPS 15 vs ASUS ROG Zephyrus G14</h2>
+                <p class="excerpt">
+                    Créateur vs gamer : XPS 15 avec OLED 3.5K pour créatifs ou Zephyrus G14
+                    avec RTX 4060 pour gaming ? Le comparatif ultime laptop polyvalent.
+                </p>
+                <ul class="key-points">
+                    <li>GPU : RTX 4060 (G14) écrase RTX 4050 (XPS) en gaming/3D</li>
+                    <li>Écran : OLED 3.5K (XPS) vs IPS 165Hz (G14)</li>
+                    <li>Poids : G14 210g plus léger (1,65 kg vs 1,86 kg)</li>
+                    <li>Autonomie : XPS 10-12h vs G14 8-10h</li>
+                    <li>Prix : G14 200€ moins cher + 1 TB SSD</li>
+                </ul>
+                <a href="dell-xps-15-vs-asus-rog-zephyrus-g14.html" class="btn">Voir le comparatif complet</a>
+            </div>
+
+            <!-- Comparison 5 -->
+            <div class="comparison-card">
+                <span class="category">SOURIS</span>
+                <h2>Logitech MX Master 3S vs Razer DeathAdder V3 Pro</h2>
+                <p class="excerpt">
+                    Productivité vs gaming : MX Master avec molettes magiques ou DeathAdder
+                    ultra-légère 59g ? Laquelle pour votre setup en 2025 ?
+                </p>
+                <ul class="key-points">
+                    <li>Productivité : MX Master écrase (molettes, 7 boutons, multidevice)</li>
+                    <li>Gaming : DeathAdder imbattable (30K DPI, 0.2ms latence, 59g)</li>
+                    <li>Ergonomie : MX Master confort 8h+ vs DeathAdder légèreté</li>
+                    <li>Autonomie : MX Master 70 jours vs DeathAdder 90h</li>
+                    <li>Prix : DeathAdder 30€ moins cher (79€ vs 109€)</li>
+                </ul>
+                <a href="logitech-mx-master-3s-vs-razer-deathadder-v3.html" class="btn">Voir le comparatif complet</a>
+            </div>
+        </div>
+
+        <div class="back-home">
+            <h2 style="color: #2c3e50; margin-bottom: 20px;">Vous cherchez des reviews individuelles ?</h2>
+            <p style="color: #666; margin-bottom: 20px;">
+                Consultez nos tests complets de produits tech avec analyses approfondies,
+                mesures précises et avis d'experts après plusieurs semaines d'utilisation.
+            </p>
+            <a href="../index.html" class="btn-home">Retour aux Reviews</a>
+        </div>
+
+        <footer>
+            <p><strong>Tech Reviews Hub - Comparatifs</strong></p>
+            <p>Comparatifs honnêtes et détaillés pour guider vos achats tech</p>
+            <p style="font-size: 0.9em; opacity: 0.8; margin-top: 15px;">
+                <strong>Transparence :</strong> Ce site contient des liens affiliés vers Amazon.fr.
+                Nous recevons une commission sans frais supplémentaires pour vous.
+            </p>
+            <p style="margin-top: 15px; font-size: 0.9em;">
+                2025 Tech Reviews Hub. Tous droits réservés.
+            </p>
+        </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.btn, .btn-home');
+        links.forEach(link => {
+          link.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'Navigation',
+              'event_label': link.textContent.trim()
+            });
+          });
+        });
+      });
+    </script>
+</body>
+</html>

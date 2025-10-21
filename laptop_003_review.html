@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Dell XPS 15 9530 (2024) : Le Windows Laptop Ultime ? | TechReviewsHub</title>
     <meta name="description" content="Test complet du Dell XPS 15 9530 (2024). Intel Core i7-13700H, RTX 4050, écran OLED 3.5K tactile. Notre avis après 4 semaines d'utilisation intensive pour création et productivité.">
@@ -336,6 +344,95 @@
         }
         .btn-home:hover {
             background: #764ba2;
+        }        .social-share {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-share h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .share-btn span {
+            font-size: 1.3em;
+        }
+
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
         }
         @media (max-width: 768px) {
             .container {
@@ -575,6 +672,77 @@
             Les points à améliorer ? L'autonomie (limitée par l'Intel + NVIDIA), la webcam 720p anachronique, et l'absence de ports legacy qui oblige à trimballer un hub USB-C. Mais pour qui peut se permettre l'investissement et exploite réellement ses capacités, le XPS 15 9530 délivre une expérience premium remarquable.
         </p>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le Dell XPS 15 9530 est bon pour le gaming ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le Dell XPS 15 9530 avec RTX 4050 gère correctement le gaming en 1080p. Vous pouvez jouer à la plupart des jeux AAA récents en paramètres élevés à 60 FPS (Cyberpunk 2077, Starfield, Hogwarts Legacy). Cependant, ce n'est pas un laptop gaming pur : châssis fin limite le refroidissement en charge prolongée, et l'autonomie chute rapidement en jeu. Pour du gaming intensif, préférez un vrai laptop gaming comme l'ASUS ROG Zephyrus G14. Le XPS 15 brille surtout en création de contenu (vidéo, photo, 3D).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est l'autonomie réelle du Dell XPS 15 9530 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie varie énormément selon l'usage et la configuration GPU : 8-10 heures en bureautique légère avec GPU intégré Intel, 5-7 heures en usage mixte professionnel, 3-4 heures en montage vidéo 4K ou gaming avec RTX 4050 activée. L'écran OLED 3.5K consomme aussi beaucoup. C'est correct pour un laptop Windows de cette puissance, mais loin des MacBook M3 ou ThinkPad. Prévoyez le chargeur pour une journée de travail intensive.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Peut-on upgrader la RAM ou le SSD du Dell XPS 15 9530 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>La RAM est soudée (16 GB ou 32 GB selon config) donc impossible à upgrader. En revanche, le SSD est accessible et remplaçable (2x slots M.2 NVMe sur certaines configs). Vous pouvez passer de 512 GB à 2 TB facilement. Dell a malheureusement suivi la tendance Apple en soudant la RAM, ce qui oblige à bien choisir sa config dès l'achat : 16 GB suffisent pour bureautique/photo, 32 GB recommandés pour vidéo/3D/dev.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Le Dell XPS 15 9530 chauffe-t-il beaucoup ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le XPS 15 chauffe notablement en charge intensive (export vidéo, gaming, rendu 3D). Le châssis ultra-fin limite la dissipation thermique : le Core i7-13700H atteint 90-95°C en charge soutenue, et la base devient inconfortablement chaude au toucher. Les ventilateurs deviennent bruyants (audibles en visio). En usage bureautique léger, ça reste gérable. C'est le compromis d'un design premium ultra-compact avec composants puissants. Utilisez une base de refroidissement pour les sessions intensives.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce que le Dell XPS 15 9530 vaut son prix de 1 899€ ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, si vous êtes créatif Windows et valorisez l'écran OLED exceptionnel. Le prix se justifie par la RTX 4050 (rare sur ultraportables), le magnifique écran OLED 3.5K tactile, le design premium CNC aluminium, et le clavier/trackpad de qualité. Cependant, la concurrence est féroce : MacBook Pro 14 M3 (2 000€) offre meilleure autonomie et perfs, ASUS Zephyrus G14 (1 700€) est plus gaming-friendly. Le XPS 15 est idéal si vous voulez le meilleur écran Windows pour création de contenu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est la garantie du Dell XPS 15 9530 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Dell propose une garantie standard de 1 an avec support technique basique. Vous pouvez l'étendre à 3-4 ans avec ProSupport (intervention sur site J+1, support prioritaire). Pour un laptop premium à 1 900€+, je recommande vivement ProSupport Plus (inclut dommages accidentels : écran cassé, liquide renversé). Le SAV Dell est correct mais moins premium qu'Apple. Attention : réparations hors garantie très coûteuses (écran OLED 600€+, carte mère 800€+).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="related-products">
             <h3>💡 Produits similaires à considérer :</h3>
             <p>
@@ -596,5 +764,75 @@
             <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+            });
+        });
+      });
+
+      // Social Share Functions
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      function shareOnFacebook() {
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Facebook', 'content_type': pageTitle});
+      }
+
+      function shareOnTwitter() {
+          window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Twitter', 'content_type': pageTitle});
+      }
+
+      function shareOnLinkedIn() {
+          window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'LinkedIn', 'content_type': pageTitle});
+      }
+
+      function shareOnWhatsApp() {
+          window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+          gtag('event', 'share', {'method': 'WhatsApp', 'content_type': pageTitle});
+      }
+
+      function shareByEmail() {
+          window.location.href = `mailto:?subject=${pageTitle}&body=Regarde cet article : ${pageUrl}`;
+          gtag('event', 'share', {'method': 'Email', 'content_type': pageTitle});
+      }
+    </script>
 </body>
 </html>

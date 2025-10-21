@@ -2,6 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Sony WH-1000XM5 (2024) : Le Roi des Casques à Réduction de Bruit ? | TechReviewsHub</title>
     <meta name="description" content="Test complet du Sony WH-1000XM5. Réduction de bruit active exceptionnelle, qualité audio Hi-Res, autonomie 30h. Notre avis après 4 semaines d'utilisation intensive en transport et télétravail.">
@@ -336,6 +344,95 @@
         }
         .btn-home:hover {
             background: #764ba2;
+        }        .social-share {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-share h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.3em;
+        }
+        .share-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            background: white;
+            color: #333;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .share-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .share-btn span {
+            font-size: 1.3em;
+        }
+
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
         }
 
         @media (max-width: 768px) {
@@ -578,6 +675,77 @@
             Les seules réserves concernent l'absence de pliage (moins compact que le XM4) et le prix qui reste élevé (bien que justifié par les performances). Mais pour qui recherche **le meilleur casque ANC** avec qualité audio Hi-Res, autonomie record et confort prolongé, le WH-1000XM5 mérite pleinement son statut de référence absolue.
         </p>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ La réduction de bruit du Sony WH-1000XM5 est-elle efficace dans l'avion et le métro ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, absolument ! Le Sony WH-1000XM5 offre la meilleure réduction de bruit active du marché grâce à ses 8 microphones et son processeur QN1. En avion, il annule parfaitement le grondement constant des réacteurs (~95% d'atténuation), créant une bulle de silence totale. En métro/train, il élimine efficacement le bruit de roulement, les conversations et les annonces (~90% d'atténuation). Même sans musique, le confort acoustique est exceptionnel. C'est LE casque de référence pour les voyageurs fréquents et les trajets quotidiens en transport en commun.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Peut-on utiliser le Sony WH-1000XM5 en filaire ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le WH-1000XM5 inclut un câble jack 3.5mm dans la boîte pour une utilisation filaire. En mode filaire, la qualité audio est légèrement supérieure grâce à l'absence de compression Bluetooth, et vous n'avez pas besoin de batterie (utile si elle est déchargée). L'ANC reste fonctionnel en mode filaire mais nécessite que le casque soit allumé (donc de la batterie). En mode passif (casque éteint + câble), le son passe mais perd en dynamique et en basses. Pour la meilleure qualité audio, privilégiez le mode Bluetooth LDAC ou le mode filaire avec ANC activé.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Quelle est l'autonomie réelle du Sony WH-1000XM5 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie réelle avec ANC activé est d'environ 28 à 30 heures en usage normal (volume 60%, codec LDAC), ce qui est remarquable. Sans ANC, vous atteindrez 38 à 40 heures. Pour un usage quotidien d'1h30 de trajet, cela représente environ 19 jours d'autonomie sans recharge. La charge rapide USB-C est bluffante : seulement 3 minutes de charge donnent 3 heures d'écoute, parfait pour un départ imprévu. Charge complète en 3h20. C'est l'un des meilleurs casques du marché en termes d'autonomie.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Est-ce confortable pour de longues sessions d'écoute ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, très confortable ! À seulement 250 g, le WH-1000XM5 est l'un des casques ANC circum-auriculaires les plus légers du marché. Les coussinets en similicuir doux et la pression d'arceau bien calibrée permettent un port confortable pendant 4 à 5 heures sans gêne ni fatigue. Au-delà, la chaleur peut s'accumuler sur les oreilles (normal pour du circumaural fermé), mais ça reste acceptable. Pour des sessions ultra-prolongées de 6h+ (vols long-courriers), le Bose QC45 est légèrement plus confortable, mais le Sony reste excellent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ Le Sony WH-1000XM5 supporte-t-il le multipoint Bluetooth ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le WH-1000XM5 supporte le multipoint Bluetooth 2 appareils simultanés. Cela signifie que vous pouvez connecter le casque à votre smartphone et votre laptop en même temps. Le casque bascule automatiquement entre les deux sources selon l'appareil actif : par exemple, vous pouvez regarder une vidéo sur votre laptop et recevoir instantanément un appel sur votre smartphone sans avoir à reconfigurer manuellement. C'est très pratique pour le télétravail et l'usage quotidien. La connexion Bluetooth 5.2 assure une stabilité parfaite jusqu'à 10m.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">❓ La qualité d'appel du Sony WH-1000XM5 est-elle bonne ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, excellente ! Les 8 microphones du WH-1000XM5 (dont 4 dédiés à la captation vocale) avec suppression de bruit de fond par IA offrent une qualité d'appel professionnelle. Votre voix est claire, bien définie, sans résonance métallique. En environnement bruyant (rue, métro, café), le casque filtre efficacement les bruits parasites tout en préservant votre voix. Pour les visioconférences Teams/Zoom/Meet, le XM5 fait un excellent micro sans-fil avec latence imperceptible. C'est un vrai atout pour le télétravail nomade et les appels professionnels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="related-products">
             <h3>💡 Produits similaires à considérer :</h3>
             <p>
@@ -599,5 +767,75 @@
             <a href="index.html" class="btn-home">← Retour à l'accueil</a>
         </div>
     </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+
+        // FAQ Toggle
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+            });
+        });
+      });
+
+      // Social Share Functions
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      function shareOnFacebook() {
+          window.open(`https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Facebook', 'content_type': pageTitle});
+      }
+
+      function shareOnTwitter() {
+          window.open(`https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'Twitter', 'content_type': pageTitle});
+      }
+
+      function shareOnLinkedIn() {
+          window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${pageTitle}`, '_blank', 'width=600,height=400');
+          gtag('event', 'share', {'method': 'LinkedIn', 'content_type': pageTitle});
+      }
+
+      function shareOnWhatsApp() {
+          window.open(`https://wa.me/?text=${pageTitle}%20${pageUrl}`, '_blank');
+          gtag('event', 'share', {'method': 'WhatsApp', 'content_type': pageTitle});
+      }
+
+      function shareByEmail() {
+          window.location.href = `mailto:?subject=${pageTitle}&body=Regarde cet article : ${pageUrl}`;
+          gtag('event', 'share', {'method': 'Email', 'content_type': pageTitle});
+      }
+    </script>
 </body>
 </html>

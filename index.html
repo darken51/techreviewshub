@@ -2,6 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <!-- Google Analytics 4 -->
+    <!-- To get your GA4 ID: Go to https://analytics.google.com → Admin → Data Streams → Select your stream → Copy the Measurement ID (starts with G-) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="J8zDy2nG5pMmmbCvqd6fYzJYzM-Th4fWBPVaWaM_s4o" />
     <title>Tech Reviews Hub - Tests et Avis d'Experts sur les Produits Tech</title>
@@ -157,6 +166,70 @@
                 padding: 30px 20px;
             }
         }
+
+        .newsletter-popup {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+        }
+        .newsletter-popup.show {
+            display: flex;
+        }
+        .newsletter-content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 500px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+        .newsletter-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: #999;
+        }
+        .newsletter-content h2 {
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 10px;
+            margin: 25px 0;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 15px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+        .newsletter-form button {
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .newsletter-privacy {
+            font-size: 0.85em;
+            color: #999;
+        }
     </style>
 </head>
 <body>
@@ -165,6 +238,19 @@
             <h1>🎯 Tech Reviews Hub</h1>
             <p class="subtitle">Tests et Avis d'Experts sur les Produits Tech</p>
             <p class="tagline">Nous vous aidons à prendre des décisions éclairées pour vos achats technologiques</p>
+            <nav style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e9ecef;">
+                <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; font-size: 1.1em;">
+                    <a href="#laptops" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">💻 Laptops</a>
+                    <a href="#headphones" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">🎧 Casques</a>
+                    <a href="#monitors" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">🖥️ Moniteurs</a>
+                    <a href="#keyboards" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">⌨️ Claviers</a>
+                    <a href="#mice" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">🖱️ Souris</a>
+                    <a href="#tablets" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">📱 Tablettes</a>
+                    <a href="comparatifs/index.html" style="color: #e74c3c; text-decoration: none; font-weight: 700; padding: 8px 15px; border-radius: 6px; background: #ffe6e6; transition: background 0.3s;">⚖️ Comparatifs</a>
+                    <a href="guides/index.html" style="color: #27ae60; text-decoration: none; font-weight: 700; padding: 8px 15px; border-radius: 6px; background: #e6ffe6; transition: background 0.3s;">📚 Guides</a>
+                    <a href="blog/index.html" style="color: #764ba2; text-decoration: none; font-weight: 700; padding: 8px 15px; border-radius: 6px; background: #f0e6ff; transition: background 0.3s;">📝 Blog</a>
+                </div>
+            </nav>
         </header>
 
         <!-- LAPTOPS -->
@@ -456,5 +542,71 @@
             </p>
         </footer>
     </div>
+
+    <!-- Newsletter Popup -->
+    <div id="newsletter-popup" class="newsletter-popup">
+        <div class="newsletter-content">
+            <button class="newsletter-close" onclick="closeNewsletter()">✕</button>
+            <h2>📬 Restez informé !</h2>
+            <p>Recevez nos derniers tests et guides d'achat directement dans votre boîte mail.</p>
+            <form class="newsletter-form" onsubmit="submitNewsletter(event)">
+                <input type="email" placeholder="Votre adresse email" required>
+                <button type="submit">S'abonner</button>
+            </form>
+            <p class="newsletter-privacy">Pas de spam. Désabonnement en 1 clic.</p>
+        </div>
+    </div>
+
+    <!-- Amazon Affiliate Click Tracking -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track all Amazon affiliate link clicks
+        const amazonLinks = document.querySelectorAll('a[href*="amazon.fr"]');
+        amazonLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            const productName = document.querySelector('h1') ? document.querySelector('h1').textContent : 'Unknown';
+            gtag('event', 'click', {
+              'event_category': 'Amazon Affiliate',
+              'event_label': productName,
+              'value': link.href
+            });
+          });
+        });
+
+        // Track CTA button clicks
+        const ctaButtons = document.querySelectorAll('.cta, .btn-secondary');
+        ctaButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'click', {
+              'event_category': 'CTA Click',
+              'event_label': button.textContent.trim()
+            });
+          });
+        });
+      });
+
+      // Newsletter Popup
+      function showNewsletter() {
+          if (!localStorage.getItem('newsletter-shown')) {
+              document.getElementById('newsletter-popup').classList.add('show');
+              localStorage.setItem('newsletter-shown', 'true');
+          }
+      }
+
+      function closeNewsletter() {
+          document.getElementById('newsletter-popup').classList.remove('show');
+      }
+
+      function submitNewsletter(e) {
+          e.preventDefault();
+          const email = e.target.querySelector('input[type="email"]').value;
+          gtag('event', 'newsletter_signup', {'email': email});
+          alert('Merci ! Vous êtes inscrit à notre newsletter.');
+          closeNewsletter();
+      }
+
+      // Show popup after 30 seconds
+      setTimeout(showNewsletter, 30000);
+    </script>
 </body>
 </html>
