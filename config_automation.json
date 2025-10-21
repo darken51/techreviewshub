@@ -1,0 +1,108 @@
+{
+  "site": {
+    "name": "Tech Reviews Hub",
+    "url": "https://darken51.github.io/techreviewshub",
+    "github_repo": "darken51/techreviewshub",
+    "amazon_tag": "techrevie06ac-21"
+  },
+
+  "automation": {
+    "enabled": true,
+    "auto_commit": true,
+    "auto_push": true,
+    "auto_price_update": false,
+    "auto_review_generation": false
+  },
+
+  "schedule": {
+    "review_generation": {
+      "enabled": false,
+      "frequency": "weekly",
+      "day": "monday",
+      "time": "02:00",
+      "batch_size": 3
+    },
+    "price_update": {
+      "enabled": false,
+      "frequency": "daily",
+      "time": "03:00"
+    },
+    "backup": {
+      "enabled": true,
+      "frequency": "daily",
+      "time": "04:00",
+      "keep_last": 7
+    },
+    "health_check": {
+      "enabled": true,
+      "frequency": "6hours"
+    }
+  },
+
+  "content_generation": {
+    "reviews": {
+      "min_rating": 4.0,
+      "max_rating": 5.0,
+      "min_price": 50,
+      "max_price": 3000,
+      "faq_count": 6,
+      "pros_count": 5,
+      "cons_count": 4
+    },
+    "blog": {
+      "auto_generate": false,
+      "topics": [
+        "Comparatifs produits",
+        "Guides d'achat",
+        "Tendances tech",
+        "Astuces productivité"
+      ]
+    }
+  },
+
+  "seo": {
+    "google_analytics_id": "G-XXXXXXXXXX",
+    "meta_author": "Tech Reviews Hub",
+    "default_locale": "fr",
+    "sitemap_auto_update": true
+  },
+
+  "notifications": {
+    "email": {
+      "enabled": false,
+      "recipients": ["admin@techreviewshub.fr"]
+    },
+    "slack": {
+      "enabled": false,
+      "webhook_url": ""
+    }
+  },
+
+  "api_keys": {
+    "amazon_product_api": {
+      "access_key": "",
+      "secret_key": "",
+      "partner_tag": "techrevie06ac-21"
+    },
+    "openai": {
+      "api_key": "",
+      "model": "gpt-4",
+      "enabled": false
+    }
+  },
+
+  "github_actions": {
+    "enabled": true,
+    "workflows": {
+      "auto_deploy": true,
+      "price_check": false,
+      "content_generation": false
+    }
+  },
+
+  "limits": {
+    "max_reviews_per_day": 10,
+    "max_api_calls_per_hour": 100,
+    "max_commit_size_mb": 50
+  }
+}
