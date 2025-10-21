@@ -385,6 +385,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container {
@@ -683,6 +734,76 @@
             Voir le Prix sur Amazon.fr (179€)
         </a>
 
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions fréquentes sur le Corsair K100 RGB</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Corsair K100 RGB est-il compatible avec Mac et Linux ou uniquement Windows ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Corsair K100 RGB est principalement optimisé pour Windows (7/8/10/11) avec le logiciel iCUE complet. Sur Mac et Linux, le clavier fonctionne en mode basique : toutes les touches standard fonctionnent, mais vous perdez la personnalisation iCUE (macros, RGB avancé, profils). Sur Mac, les touches Windows/Alt sont mappées automatiquement à Cmd/Option. Pour usage Mac/Linux : préférez le Keychron K8 Pro ou Logitech MX Keys, conçus multi-plateformes. Le K100 RGB est un clavier gaming Windows pur : achetez-le uniquement si vous êtes sur PC Windows et souhaitez exploiter pleinement iCUE.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Quels types de switches sont disponibles sur le Corsair K100 RGB et lequel choisir ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Corsair K100 RGB est disponible avec deux types de switches : Cherry MX Speed Silver (linéaire ultra-rapide, actuation 1.2mm/45g - optimal FPS compétitif, très sensible), Cherry MX Brown (tactile, actuation 2mm/55g - polyvalent gaming/bureautique, feedback tactile sans bruit). Les Speed Silver sont les plus rapides du marché pour gaming pur (Valorant, CS2, Apex) mais peuvent causer des frappes accidentelles en bureautique. Les Brown offrent un meilleur compromis gaming/productivité avec retour tactile. Pour esport FPS : Speed Silver. Pour usage mixte gaming+travail : Brown. Tous les switchesdurent 100M+ clics.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Corsair K100 RGB convient-il pour la programmation ou est-ce uniquement gaming ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Corsair K100 RGB peut servir en programmation, mais c'est suréquipé. Points forts pour dev : layout 100% complet avec pavé numérique, 6 touches macro programmables G1-G6 (build, debug, commit), switches mécaniques précis, rétroéclairage RGB per-key pour identifier les raccourcis, repose-poignet rembourré pour confort longue durée. Limites : logiciel iCUE parfois lourd (consomme RAM), switches Speed Silver trop sensibles (frappes accidentelles), poids 1.2kg non portable, prix élevé (179€). Pour développement pur, le Logitech MX Keys (119€) ou Keychron K8 Pro (89€) offrent un meilleur rapport qualité-prix. Le K100 RGB brille en gaming, acceptable en développement mais non-optimal.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Corsair K100 RGB est-il bon pour le gaming compétitif esport ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le Corsair K100 RGB est l'un des meilleurs claviers gaming pour l'esport en 2025. Avantages compétitifs : polling rate 4000Hz (4x plus réactif que 1000Hz standard, latence <0.25ms), switches Cherry MX Speed Silver ultra-rapides (actuation 1.2mm), N-key rollover complet, touche Elgato Stream Deck intégrée, 8GB mémoire embarquée pour profils, mode tournoi (désactive touches Windows). Les joueurs esport professionnels l'utilisent pour Valorant, CS2, League of Legends. Limites : filaire uniquement (mais préférable en compétitif pour zéro latence), poids 1.2kg (non transportable en LAN sans effort). Pour esport sérieux : c'est un choix de référence absolu.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le câble du Corsair K100 RGB est-il détachable et quel type de connexion utilise-t-il ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Corsair K100 RGB utilise un câble USB Type-A détachable de 1.8 mètres avec connecteur propriétaire Corsair côté clavier (non USB-C standard). Le câble est tressé, renforcé, avec ferrite anti-interférences. Détachable : oui, mais remplacement nécessite un câble Corsair spécifique (environ 25€ si perdu). Connexion PC : USB 3.0 Type-A (nécessite 2 ports USB : un pour le clavier, un pour le passthrough USB). Polling 4000Hz nécessite le port USB 3.0 (USB 2.0 limite à 1000Hz). Pour portables récents sans USB-A : adaptateur USB-C vers USB-A requis. Le câble est de qualité premium mais aurait bénéficié d'un connecteur USB-C universel côté clavier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Quelle est la garantie Corsair pour le K100 RGB et que couvre-t-elle ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Corsair K100 RGB bénéficie d'une garantie constructeur de 2 ans en Europe (extension possible à 3 ans via enregistrement produit sur site Corsair). La garantie couvre : défauts de fabrication, switches défectueux, problèmes électroniques/PCB, LED RGB non fonctionnelles, molette iCUE défaillante, port passthrough USB défectueux. Elle ne couvre pas : switches usés par usage normal (garantis 100M clics = 5-10 ans), keycaps usés, câble endommagé physiquement, dommages liquides, modifications personnelles. Corsair offre un excellent support client : RMA généralement approuvé sous 24-48h, remplacement sous 5-10 jours. Les switches Cherry MX sont légendaires pour leur durabilité. Achat Amazon.fr recommandé : retour 30 jours + SAV simplifié.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="disclosure">
             <strong>Transparence :</strong> Ce site contient des liens affilies Amazon. Si vous effectuez un achat via nos liens, nous pouvons recevoir une commission sans frais supplementaires pour vous. Cela nous permet de continuer a produire des tests independants et detailles. Notre avis reste 100% objectif et non influence par ces partenariats.
         </div>
@@ -719,6 +840,12 @@
           });
         });
       });
+
+      // FAQ Toggle Function
+      function toggleFAQ(button) {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('active');
+      }
 
       // Social Share Functions
       const pageUrl = encodeURIComponent(window.location.href);

@@ -450,7 +450,57 @@
         .share-btn span {
             font-size: 1.3em;
         }
-
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
 
         @media (max-width: 768px) {
@@ -665,6 +715,88 @@
                 </a>
             </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Les AirPods Pro 2 sont-ils compatibles avec Android ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, les AirPods Pro 2 fonctionnent sur Android mais avec des fonctionnalités très limitées. Vous aurez l'audio Bluetooth basique et l'ANC, mais pas d'appairage instantané, pas d'audio spatial personnalisé, pas de réglages via app, pas de localisation, et pas de basculement automatique entre appareils. Pour Android, privilégiez les Sony WH-1000XM5 ou Sennheiser Momentum 4 qui offrent bien plus de fonctionnalités.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est l'autonomie réelle des AirPods Pro 2 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Les AirPods Pro 2 offrent 6 heures d'écoute avec ANC activé (contre 4.5h génération 1), ce qui suffit pour une journée de travail. Le boîtier USB-C apporte 24 heures supplémentaires, soit 30 heures au total. La charge rapide donne 1 heure d'écoute en 5 minutes. C'est une excellente autonomie pour des écouteurs intra-auriculaires true wireless.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Les AirPods Pro 2 sont-ils bons pour le sport ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, les AirPods Pro 2 sont adaptés au sport léger (course, salle de sport) grâce à leur certification IPX4 (résistance à l'eau et à la sueur), leur tenue sécurisée avec 4 tailles d'embouts, et leur légèreté. L'ANC peut être désactivé via le mode transparence pour rester conscient de l'environnement. Pour du sport intense (trail, CrossFit), des écouteurs avec crochets d'oreille (Powerbeats Pro) offrent une meilleure tenue.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Peut-on utiliser un seul AirPod Pro 2 à la fois ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, vous pouvez utiliser un seul AirPod Pro 2 (gauche ou droit) pendant que l'autre reste dans le boîtier en charge. L'audio devient automatiquement mono, et toutes les fonctionnalités (ANC, transparence, commandes tactiles, Siri) restent actives. C'est pratique pour les longues sessions d'appels où vous pouvez alterner les oreilles pour le confort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Les AirPods Pro 2 valent-ils 100€ de plus que les AirPods 3 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, si vous valorisez l'ANC exceptionnel et l'isolation passive des embouts intra-auriculaires. Les AirPods Pro 2 (279€) offrent l'ANC le meilleur du marché pour des intra-auriculaires, des embouts adaptables, l'audio spatial personnalisé avec puce H2, et le mode transparence adaptatif. Les AirPods 3 (179€) n'ont pas d'ANC ni d'embouts (format ouvert), donc moins d'isolation. Pour les transports ou le bureau bruyant, les Pro 2 justifient le surcoût.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Comment fonctionne l'audio spatial personnalisé des AirPods Pro 2 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>L'audio spatial personnalisé utilise la caméra TrueDepth de votre iPhone pour scanner la forme de vos oreilles et votre tête. Ces données créent un profil HRTF (Head-Related Transfer Function) unique qui optimise la spatialisation audio pour votre morphologie. Sur Apple Music Dolby Atmos ou les films, vous obtenez un son 3D immersif avec suivi de tête dynamique (le son reste ancré quand vous tournez la tête). C'est une expérience bluffante, quasi mini-salle de cinéma portable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est la garantie des AirPods Pro 2 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Apple propose une garantie standard de 1 an couvrant les défauts de fabrication. Vous pouvez l'étendre avec AppleCare+ (29€ pour 2 ans) qui ajoute 2 remplacements accidentels par an (29€/incident), le remplacement de batterie si capacité < 80%, et le support prioritaire Apple. Les AirPods Pro 2 sont robustes (certification IPX4), mais AppleCare+ se justifie pour une utilisation intensive quotidienne.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="related-products">
                 <h3>Produits Similaires Testés</h3>
                 <ul>
@@ -714,6 +846,27 @@
               'event_label': button.textContent.trim()
             });
           });
+        });
+
+        // FAQ Toggle with Google Analytics tracking
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                const isOpening = !answer.classList.contains('active');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+
+                // Track FAQ interaction
+                if (isOpening) {
+                    gtag('event', 'faq_open', {
+                        'event_category': 'FAQ',
+                        'event_label': this.textContent.replace('❓ ', '').replace('✅ ', '')
+                    });
+                }
+            });
         });
       });
 

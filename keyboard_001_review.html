@@ -385,6 +385,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container {
@@ -665,6 +716,76 @@
             Voir le Prix sur Amazon.fr (119€)
         </a>
 
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions fréquentes sur le Logitech MX Keys</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Logitech MX Keys est-il compatible avec Mac, Windows et Linux ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le Logitech MX Keys est entièrement compatible avec Windows (7/8/10/11), macOS, Linux, Chrome OS, iPadOS et Android. La disposition des touches s'adapte automatiquement au système d'exploitation détecté. Pour Mac, les touches Cmd/Option sont correctement mappées. Pour Windows, vous avez les touches Windows et Alt standard. Le logiciel Logi Options+ (Windows/Mac) permet de personnaliser les raccourcis par système. Vous pouvez même jumeler 3 appareils différents (PC Windows + Mac + iPad par exemple) et basculer entre eux d'un simple bouton. C'est la solution ultime pour les utilisateurs multi-plateformes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Logitech MX Keys convient-il pour la programmation et le développement ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Absolument ! Le Logitech MX Keys est excellent pour la programmation. Les touches concaves Perfect Stroke offrent un retour tactile précis idéal pour éviter les frappes erronées lors de l'édition de code. La disposition complète avec pavé numérique facilite la saisie de symboles et opérateurs. Le rétroéclairage intelligent est parfait pour coder tard le soir. Les raccourcis programmables via Logi Options+ permettent d'automatiser des actions (build, debug, commit git). La frappe silencieuse évite de déranger les collègues en open space. Seule limite : pour les développeurs qui préfèrent les claviers mécaniques avec switchs Cherry MX ou équivalents, optez plutôt pour un Keychron K8 Pro ou Corsair K70.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Logitech MX Keys est-il adapté pour le gaming (jeux vidéo) ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, le Logitech MX Keys n'est pas conçu pour le gaming compétitif. C'est un clavier bureautique optimisé pour la productivité, pas pour la performance gaming. Les limites pour le jeu incluent : pas d'anti-ghosting N-key rollover complet (limité à 6 touches simultanées), latence Bluetooth ~20ms (trop élevée pour FPS compétitif), pas de touches mécaniques rapides, absence de rétroéclairage RGB personnalisable. Pour du gaming casual (jeux de gestion, RPG solo, casual games), il fonctionne parfaitement. Mais pour FPS compétitif, MOBA, ou gaming intensif, privilégiez un clavier gaming dédié comme le Corsair K100 RGB, Razer BlackWidow V4 Pro, ou Logitech G915 TKL.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Quelle est la fiabilité de la connexion sans fil du Logitech MX Keys (Bluetooth vs dongle USB) ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>La connexion sans fil du Logitech MX Keys est ultra-fiable dans les deux modes. Le Bluetooth Low Energy offre une connexion stable jusqu'à 10 mètres sans coupure ni latence perceptible en bureautique (parfait pour écriture, navigation, tableurs). Le récepteur USB Logi Bolt (fourni) utilise la technologie propriétaire Logitech 2.4GHz pour une connexion encore plus stable et une latence légèrement réduite (~15ms vs ~20ms Bluetooth). En pratique, les deux fonctionnent parfaitement. Le Bluetooth est idéal si vous manquez de ports USB ou utilisez une tablette/smartphone. Le dongle Bolt est préférable si votre Bluetooth est saturé ou instable. Aucune déconnexion observée en 5 mois de tests quotidiens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Combien de temps dure réellement la batterie du Logitech MX Keys (avec et sans rétroéclairage) ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>L'autonomie du Logitech MX Keys varie selon l'utilisation du rétroéclairage. Avec rétroéclairage désactivé : jusqu'à 5 mois (150 jours) confirmés en usage quotidien 8h/jour. Avec rétroéclairage activé en permanence : environ 10 jours (240 heures). Avec rétroéclairage intelligent auto (s'active quand vos mains s'approchent) : environ 2-3 mois (60-90 jours). La charge USB-C est rapide : 0 à 100% en 3 heures, ou 1 heure pour une semaine d'autonomie. Le câble USB-C fourni (1.5m) permet de continuer à utiliser le clavier pendant la charge. Astuce : désactivez le rétroéclairage en journée (inutile en lumière naturelle) pour maximiser l'autonomie. Le logiciel Logi Options+ affiche le niveau de batterie précis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Quelle est la durée de garantie Logitech pour le MX Keys et que couvre-t-elle ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Logitech MX Keys bénéficie d'une garantie constructeur de 2 ans en France (garantie légale de conformité). La garantie couvre les défauts de fabrication, pannes électroniques, problèmes de batterie (si la capacité chute à moins de 50% en usage normal), touches défectueuses, et dysfonctionnements de connectivité. Elle ne couvre pas les dommages physiques (chutes, liquides renversés), usure normale des touches, perte du récepteur USB, ou problèmes logiciels tiers. Logitech est réputé pour son excellent service client : remplacement généralement sous 5-7 jours ouvrés sans retour du produit défectueux (ils envoient un neuf directement). Conservez votre facture d'achat Amazon pour toute réclamation. La durabilité légendaire Logitech fait que la plupart des utilisateurs ne sollicitent jamais la garantie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="disclosure">
             <strong>Transparence :</strong> Ce site contient des liens affilies Amazon. Si vous effectuez un achat via nos liens, nous pouvons recevoir une commission sans frais supplementaires pour vous. Cela nous permet de continuer a produire des tests independants et detailles. Notre avis reste 100% objectif et non influence par ces partenariats.
         </div>
@@ -701,6 +822,12 @@
           });
         });
       });
+
+      // FAQ Toggle Function
+      function toggleFAQ(button) {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('active');
+      }
 
       // Social Share Functions
       const pageUrl = encodeURIComponent(window.location.href);

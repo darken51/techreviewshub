@@ -385,6 +385,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container {
@@ -648,6 +699,76 @@
             🛒 Voir le Prix sur Amazon.fr (599€)
         </a>
 
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions fréquentes sur le Samsung Odyssey G7 32"</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Est-ce que le Samsung Odyssey G7 32" est compatible avec Mac et PS5/Xbox Series X ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le Samsung Odyssey G7 est compatible avec Mac et consoles next-gen. Pour Mac, il fonctionne parfaitement en DisplayPort ou HDMI avec résolution QHD (2560x1440) et 120Hz-144Hz selon le modèle Mac. Pour PS5/Xbox Series X, vous profitez du 1440p 120Hz via HDMI 2.0, mais pas du 4K (le moniteur est QHD natif). Le VRR (Variable Refresh Rate) fonctionne sur Xbox Series X. Pour un usage gaming console optimal, les consoles fonctionnent très bien, mais notez que le moniteur est optimisé pour PC gaming.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">La courbure 1000R du Samsung Odyssey G7 est-elle confortable pour un usage bureautique quotidien ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>La courbure aggressive 1000R du Samsung Odyssey G7 est optimisée pour le gaming immersif, mais peut être problématique pour un usage bureautique intensif. Pour la productivité (Excel, rédaction, code), la courbure déforme les lignes droites et peut fatiguer certains utilisateurs. Les créatifs (photo/vidéo) devront s'adapter à la distorsion géométrique. Si vous prévoyez 50%+ d'usage bureautique, privilégiez un écran plat comme le Dell UltraSharp U2723DE ou un ultrawide peu incurvé (1800R-1900R). Le G7 excelle en gaming, mais sa courbure extrême le rend suboptimal pour travail de précision.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Est-ce que le Samsung Odyssey G7 provoque de la fatigue oculaire avec ses 240Hz ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Non, les 240Hz réduisent en réalité la fatigue oculaire par rapport aux écrans 60Hz traditionnels. La haute fréquence de rafraîchissement rend les mouvements plus fluides et moins saccadés, ce qui sollicite moins les yeux lors du tracking visuel. Cependant, attention au scintillement PWM de la dalle VA à faible luminosité (peut fatiguer certains utilisateurs sensibles). Le mode Eye Saver (filtre lumière bleue) et Flicker Free aident à réduire la fatigue. Pour un confort optimal : utilisez 120-240Hz selon vos performances, activez Eye Saver le soir, gardez la luminosité à 40-60%, et faites des pauses régulières. La certification TÜV Flicker Free valide l'absence de scintillement nuisible.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Le Samsung Odyssey G7 32" convient-il pour le gaming compétitif FPS (Valorant, CS2, Apex) ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le Samsung Odyssey G7 est excellent pour le gaming FPS compétitif grâce à ses 240Hz et son temps de réponse 1ms. La haute fréquence offre une fluidité maximale pour tracker les ennemis, et le faible input lag (environ 4ms) garantit une réactivité instantanée. Cependant, certains joueurs esport préfèrent des écrans 24-27" pour voir tout l'écran sans tourner la tête (le 32" peut sembler grand). La courbure 1000R aide l'immersion mais peut dérouter en compétitif pur. Le G-SYNC/FreeSync Premium Pro élimine le tearing. Si vous jouez en compétitif sérieux, c'est un excellent choix, mais testez la taille 32" avant (certains préfèrent 27" comme le ASUS ROG Swift PG279QM).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Quelle carte graphique faut-il pour exploiter les 240Hz du Samsung Odyssey G7 en QHD ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Pour atteindre 240 FPS en QHD (2560x1440), vous avez besoin d'une carte graphique puissante. Pour FPS esport (Valorant, CS2, Overwatch 2, Fortnite), une RTX 4070 / RX 7800 XT suffit (réglages élevés-ultra). Pour AAA récents (Cyberpunk 2077, Starfield, Alan Wake 2), il faut une RTX 4080 / RX 7900 XTX minimum (réglages moyens-élevés pour 240 FPS), ou accepter 120-165 FPS en ultra. Pour exploiter pleinement les 240Hz sur tous les jeux : RTX 4090 recommandée. Alternative budget : jouer en 165-180 FPS avec une RTX 4070 reste ultra-fluide et bien plus abordable que viser 240 FPS constant.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <button class="faq-toggle" onclick="toggleFAQ(this)">
+                    <h3 class="faq-question" itemprop="name">Quelle est la durée de la garantie Samsung pour l'Odyssey G7 et que couvre-t-elle ?</h3>
+                </button>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Le Samsung Odyssey G7 bénéficie d'une garantie constructeur de 3 ans en France, ce qui est excellent (la plupart des concurrents offrent 2 ans). La garantie couvre les défauts de fabrication, pixels morts (selon la politique Samsung : 3+ pixels morts agglomérés ou 7+ pixels isolés), pannes électroniques, et problèmes de rétroéclairage. Elle ne couvre pas les dommages physiques, pixels chauds isolés, burn-in (peu probable sur LCD), ou usure normale. Samsung offre généralement un service de remplacement ou réparation sous 5-10 jours ouvrés. Pour une protection maximale, certains revendeurs proposent des extensions de garantie 5 ans incluant la casse accidentelle. Conservez votre facture d'achat pour toute réclamation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="disclosure">
             <strong>⚠️ Transparence :</strong> Ce site contient des liens affiliés Amazon. Si vous effectuez un achat via nos liens, nous pouvons recevoir une commission sans frais supplémentaires pour vous. Cela nous permet de continuer à produire des tests indépendants et détaillés. Notre avis reste 100% objectif et non influencé par ces partenariats.
         </div>
@@ -684,6 +805,12 @@
           });
         });
       });
+
+      // FAQ Toggle Function
+      function toggleFAQ(button) {
+        const answer = button.nextElementSibling;
+        answer.classList.toggle('active');
+      }
 
       // Social Share Functions
       const pageUrl = encodeURIComponent(window.location.href);

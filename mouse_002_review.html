@@ -327,6 +327,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container { padding: 25px; }
@@ -586,6 +637,110 @@
             </p>
         </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ La Razer DeathAdder V3 Pro est-elle bonne pour la bureautique ou uniquement le gaming ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Elle excelle dans les deux domaines ! Conçue pour le gaming pro, la DeathAdder V3 Pro est aussi excellente en bureautique grâce à son capteur ultra-précis 30K DPI, ses boutons programmables, et son ergonomie parfaite pour de longues sessions. Cependant, elle manque de fonctionnalités productivity spécifiques : pas de molette MagSpeed, pas de molette horizontale, pas de multi-appareils Bluetooth. Si vous cherchez 80% gaming / 20% bureautique : DeathAdder V3 Pro. Si c'est 80% bureautique / 20% gaming : privilégiez la Logitech MX Master 3S. Pour un mix 50/50, la DeathAdder reste un excellent choix polyvalent.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quel DPI utiliser pour les jeux FPS comme Valorant, CS2 ou Call of Duty ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Pour les FPS compétitifs, la plupart des joueurs pros utilisent entre 400-1600 DPI avec une sensibilité in-game basse. Valorant/CS2 : 400-800 DPI est optimal (permet des mouvements amples et précis). Call of Duty/Apex : 800-1600 DPI pour un gameplay plus dynamique. Le capteur Focus Pro 30K permet de descendre à 100 DPI ou monter à 30 000 DPI sans aucune accélération. L'astuce : réglez votre DPI + sensibilité in-game pour qu'un mouvement complet de votre tapis = 360° en jeu. Le polling rate 8000 Hz de la V3 Pro élimine toute latence, crucial en compétitif.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Y a-t-il une différence de latence entre le mode sans fil et filaire ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Non, la latence est strictement identique ! Avec le dongle HyperSpeed 2.4 GHz et le polling rate 8000 Hz, le mode sans fil offre une latence de 0.125 ms, exactement la même qu'en filaire. Razer a optimisé la technologie sans fil au point que même les joueurs esports professionnels l'utilisent en tournoi. Le seul avantage du mode filaire est de recharger la souris en jouant (autonomie 90h sans RGB, 24h avec RGB activé). En pratique, vous ne sentirez AUCUNE différence de réactivité entre sans fil et filaire. Le mythe du "filaire = meilleur" est révolu depuis 2020.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle prise en main (grip) convient le mieux à la DeathAdder V3 Pro ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>La DeathAdder V3 Pro est conçue pour le "palm grip" (paume posée) et "claw grip" (griffe). Sa forme ergonomique asymétrique est idéale pour les mains moyennes à grandes (17-21 cm). Palm grip : confort maximal pour sessions longues, contrôle stable. Claw grip : précision accrue pour le flick aiming. Fingertip grip : possible mais moins optimal vu la taille de la souris. Le design droitier exclusif (pas de version gaucher) et le poids plume de 63g facilitent les mouvements rapides sans fatigue. Si vous avez de petites mains (< 17 cm), regardez plutôt la Razer Viper Mini ou Logitech G Pro X Superlight.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Combien de temps dure vraiment la batterie en usage intensif gaming ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Les 90 heures annoncées sont réalistes SANS le RGB activé. En mode gaming intensif (4-6h/jour) sans RGB : 2-3 semaines d'autonomie. Avec RGB activé : 24-30 heures (3-5 jours d'usage). Polling rate 8000 Hz vs 1000 Hz a un impact minimal sur l'autonomie (5-10%). La charge USB-C complète prend 2 heures. Charge rapide : 10 minutes = 12 heures d'autonomie (parfait avant un tournoi). Astuce : désactivez le RGB pour maximiser l'autonomie, la souris reste tout aussi performante. Comparé aux 70 jours de la MX Master 3S, c'est inférieur, mais normal vu le polling rate ultra-élevé.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est la garantie Razer et la durabilité de la souris ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Razer offre une garantie constructeur de 2 ans (en Europe), couvrant les défauts de fabrication. Les switches optiques Gen-3 sont ultra-durables (90 millions de clics vs 50M pour des switches mécaniques classiques) et éliminent le double-clic involontaire. Le châssis en plastique renforcé ABS avec finition mate résiste aux chocs. Les patins PTFE 100% vierge durent 2-3 ans en usage intensif (remplaçables facilement). Point d'attention : le câble SpeedFlex est résistant mais reste le point faible à long terme (manipulations fréquentes plug/unplug). Globalement, comptez 3-5 ans de durée de vie en usage gaming intensif.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Doit-on obligatoirement utiliser le logiciel Razer Synapse ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Non, la souris fonctionne parfaitement sans Synapse avec les réglages par défaut (800 DPI, polling 1000 Hz). Cependant, Synapse est fortement recommandé pour : régler le DPI (100-30000), changer le polling rate (125/500/1000/2000/4000/8000 Hz), programmer les 5 boutons, créer des profils par jeu, activer/personnaliser le RGB. Les réglages sont sauvegardés dans la mémoire embarquée de la souris (onboard memory), donc une fois configurée, vous pouvez utiliser la souris sur un autre PC sans Synapse. Alternative Linux : OpenRazer (open-source) pour configuration basique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Share Section -->
+            <div class="social-share">
+                <h3>Partager cet article</h3>
+                <div class="share-buttons">
+                    <a href="javascript:void(0);" onclick="shareOnFacebook()" class="share-btn">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnTwitter()" class="share-btn">
+                        <span>🐦</span> Twitter
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnLinkedIn()" class="share-btn">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnWhatsApp()" class="share-btn">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareByEmail()" class="share-btn">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+            </div>
+
         <p style="font-size: 0.9em; color: #666; margin-top: 40px;">
             <strong>Transparence :</strong> Ce site contient des liens affiliés vers Amazon.fr.
             Nous pouvons recevoir une commission sans frais supplémentaires pour vous si vous effectuez un achat via nos liens.
@@ -628,6 +783,18 @@
             });
           });
         });
+      });
+
+      // FAQ Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+              const answer = this.closest('.faq-item').querySelector('.faq-answer');
+              answer.classList.toggle('active');
+              this.textContent = answer.classList.contains('active')
+                  ? this.textContent.replace('❓', '✅')
+                  : this.textContent.replace('✅', '❓');
+          });
       });
 
       // Social Share Functions

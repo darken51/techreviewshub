@@ -451,7 +451,57 @@
             font-size: 1.3em;
         }
 
-
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             body {
@@ -694,6 +744,98 @@
                 </ul>
             </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le Sennheiser Momentum 4 fonctionne-t-il avec iPhone et Android ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, le Momentum 4 est compatible avec tous les smartphones via Bluetooth 5.2 standard. Sur Android/Windows, vous profitez du codec aptX Adaptive haute résolution (24-bit 96kHz). Sur iPhone, il utilise le codec AAC, offrant toujours une excellente qualité mais légèrement en deçà du potentiel maximal. L'app Sennheiser Smart Control est disponible sur iOS et Android pour l'égalisation et les réglages avancés.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Combien de temps dure vraiment la batterie de 60 heures ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Les 60 heures annoncées sont réalistes en usage mixte (Bluetooth + ANC activé, volume moyen). En ANC désactivé, vous pouvez atteindre 65-70 heures. En usage intensif (volume élevé, aptX Adaptive HD), comptez plutôt 50-55 heures. Même dans le pire cas, c'est le double des Sony XM5 (30h) et presque 3× les Bose QC45 (24h). Pour un usage quotidien de 2-3h, vous rechargez toutes les 3-4 semaines.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Est-ce que le Momentum 4 est bon pour les voyages en avion ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, mais avec nuances. L'autonomie de 60 heures est parfaite pour les vols long-courriers multiples sans recharge. L'ANC réduit les bruits de moteur mais reste derrière les Sony WH-1000XM5 ou AirPods Pro 2. Le confort est bon pour 4-6 heures mais inférieur au Bose QC45 pour les très longs vols. Si l'ANC maximal est prioritaire pour les voyages, privilégiez les Sony XM5. Si c'est l'autonomie, le Momentum 4 est imbattable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Peut-on utiliser le Momentum 4 en mode filaire ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, le câble audio jack 3.5mm est inclus. En mode filaire, le casque fonctionne même batterie vide (audio passif). Idéal pour les sessions studio, home cinema, ou comme backup en cas de batterie déchargée. La qualité audio en filaire est légèrement supérieure au Bluetooth AAC (pas de compression), mais aptX Adaptive se rapproche tellement du filaire que la différence est minime pour la plupart des oreilles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Est-ce que le Momentum 4 vaut 20€ de plus que le Sony WH-1000XM5 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Ça dépend de vos priorités. Si vous êtes audiophile et privilégiez la qualité sonore pure (résolution, neutralité, détails), le Momentum 4 justifie le surcoût. L'autonomie 60h (vs 30h Sony) est aussi un gros plus pour les voyageurs. Mais si vous voulez le meilleur ANC du marché et une polyvalence maximale, les Sony XM5 à 329€ sont plus équilibrés. Les Sony sont "grand public premium", le Sennheiser est "audiophile premium".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est la garantie du Sennheiser Momentum 4 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Sennheiser offre une garantie standard de 2 ans en Europe (vs 1 an pour de nombreux concurrents), couvrant les défauts de fabrication. Le SAV Sennheiser est réputé fiable avec remplacement ou réparation sous 2-3 semaines. La qualité de construction est excellente (plastique renforcé + métal), et de nombreux utilisateurs rapportent une durée de vie de 4-5 ans. Pour un casque à 349€, c'est un investissement durable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-share">
+                <h3>Partager cet article :</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn facebook" onclick="shareOnFacebook(); return false;">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="#" class="share-btn twitter" onclick="shareOnTwitter(); return false;">
+                        <span>🐦</span> Twitter
+                    </a>
+                    <a href="#" class="share-btn linkedin" onclick="shareOnLinkedIn(); return false;">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="#" class="share-btn whatsapp" onclick="shareOnWhatsApp(); return false;">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="#" class="share-btn email" onclick="shareByEmail(); return false;">
+                        <span>✉️</span> Email
+                    </a>
+                </div>
+            </div>
+
             <div class="disclosure">
                 <strong>Divulgation :</strong> TechReviewsHub est un site affilié Amazon. Nous percevons une commission sur les achats qualifiés effectués via nos liens, sans frais supplémentaires pour vous. Ces commissions financent nos tests indépendants et nos reviews détaillées. Nos évaluations restent objectives et basées sur des tests réels des produits. Prix et disponibilités susceptibles de varier. Dernière mise à jour : janvier 2024.
             </div>
@@ -735,6 +877,18 @@
             });
           });
         });
+      });
+
+      // FAQ Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+              const answer = this.closest('.faq-item').querySelector('.faq-answer');
+              answer.classList.toggle('active');
+              this.textContent = answer.classList.contains('active')
+                  ? this.textContent.replace('❓', '✅')
+                  : this.textContent.replace('✅', '❓');
+          });
       });
 
       // Social Share Functions

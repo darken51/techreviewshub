@@ -451,7 +451,57 @@
             font-size: 1.3em;
         }
 
-
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             body {
@@ -692,6 +742,109 @@
                 </ul>
             </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Le Beats Studio Pro fonctionne-t-il avec Android et Windows ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, contrairement aux AirPods, le Beats Studio Pro est compatible avec Android, Windows et tous les appareils Bluetooth. Sur Android, vous accédez à toutes les fonctionnalités (ANC, transparence, audio spatial Google) via l'app Beats. L'audio USB-C lossless fonctionne sur Android/Windows/iOS. Cependant, l'intégration est moins poussée que sur iOS (pas d'appairage instantané pop-up, pas de localisation via Localiser). Pour une expérience optimale Android, les Sony WH-1000XM5 offrent plus de fonctionnalités (égaliseur, LDAC).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Est-ce que l'audio USB-C lossless fait vraiment la différence ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, c'est la fonctionnalité la plus intéressante du Studio Pro. En mode filaire USB-C, vous obtenez un audio lossless 24-bit sans compression ni latence - idéal pour Apple Music Lossless, Tidal HiFi ou la production audio. La différence vs Bluetooth AAC est perceptible : plus de détails dans les aigus, meilleure séparation instrumentale, dynamique ouverte. Pour l'usage nomade quotidien, le Bluetooth AAC reste excellent. Mais pour les sessions d'écoute critique ou la création musicale, l'USB-C lossless justifie l'achat du Studio Pro.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Comment le Beats Studio Pro se compare-t-il aux AirPods Max ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Le Studio Pro (379€) coûte 170€ de moins que les AirPods Max (549€). Les Max offrent un ANC supérieur (meilleur que Studio Pro), une intégration Apple plus poussée (puce H1, audio spatial personnalisé), et un design premium aluminium/acier. Mais le Studio Pro a l'avantage de l'USB-C lossless (vs Lightning Max), de la compatibilité Android native, et d'un poids plus léger (260g vs 385g). Pour l'écosystème Apple pur, les Max justifient le surcoût. Pour la polyvalence Apple/Android avec budget contrôlé, le Studio Pro est le meilleur choix.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Peut-on personnaliser l'égaliseur sur le Beats Studio Pro ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Non, c'est une limite majeure : l'app Beats ne propose aucun égaliseur. Vous êtes bloqué avec la signature Beats basses-forward imposée. Si les basses puissantes ne vous conviennent pas, vous ne pouvez pas ajuster le profil sonore (contrairement aux Sony WH-1000XM5 ou Sennheiser Momentum 4 qui offrent des EQ personnalisables). Certaines apps tierces (Poweramp sur Android) permettent un EQ système, mais ce n'est pas idéal. Pour les audiophiles exigeants, cette absence d'EQ est rédhibitoire.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Le Beats Studio Pro vaut-il son prix de 379€ ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>C'est difficile à justifier face aux Sony WH-1000XM5 (329€, -50€) qui offrent un ANC supérieur, un égaliseur, le multipoint Bluetooth, et le codec LDAC. Le Studio Pro se justifie uniquement si vous valorisez : 1) le design Beats iconique, 2) l'audio USB-C lossless (rare sur le marché), 3) la signature basses puissantes pour hip-hop/électro. Pour un usage rationnel équilibré, les Sony XM5 ou Sennheiser Momentum 4 offrent plus de performances pour moins cher. Le Studio Pro reste un bon casque, mais surévalué de 30-50€.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Quelle est l'autonomie réelle du Beats Studio Pro ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Les 40 heures annoncées (Bluetooth + ANC) sont confirmées en usage réel à volume moyen. En mode USB-C filaire avec ANC, l'autonomie descend à 24h (le casque reste alimenté pour l'ampli). La charge rapide USB-C donne 4h d'écoute en 10 minutes, charge complète en 2h. C'est une autonomie solide qui tient facilement 1-2 semaines d'usage quotidien (2-3h/jour). Entre les Sony XM5 (30h) et le record Momentum 4 (60h). Aucun problème d'autonomie pour les voyages long-courriers.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">Le Beats Studio Pro est-il confortable pour les sessions longues ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Le confort est correct pour 3-4 heures continues, mais la pression de l'arceau peut fatiguer en sessions plus longues (6h+). À 260g, le poids est raisonnable et bien réparti. Les coussinets en mousse à mémoire de forme sont confortables mais moins moelleux que les Bose QC45. Pour le confort absolu longue durée, le QC45 reste supérieur. Pour des sessions de 2-4h (trajets quotidiens, travail), le Studio Pro convient parfaitement. Les porteurs de lunettes peuvent ressentir une légère pression après 2h.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-share">
+                <h3>Partager cet article :</h3>
+                <div class="share-buttons">
+                    <a href="#" class="share-btn facebook" onclick="shareOnFacebook(); return false;">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="#" class="share-btn twitter" onclick="shareOnTwitter(); return false;">
+                        <span>🐦</span> Twitter
+                    </a>
+                    <a href="#" class="share-btn linkedin" onclick="shareOnLinkedIn(); return false;">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="#" class="share-btn whatsapp" onclick="shareOnWhatsApp(); return false;">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="#" class="share-btn email" onclick="shareByEmail(); return false;">
+                        <span>✉️</span> Email
+                    </a>
+                </div>
+            </div>
+
             <div class="disclosure">
                 <strong>Divulgation :</strong> TechReviewsHub est un site affilié Amazon. Nous percevons une commission sur les achats qualifiés effectués via nos liens, sans frais supplémentaires pour vous. Ces commissions financent nos tests indépendants et nos reviews détaillées. Nos évaluations restent objectives et basées sur des tests réels des produits. Prix et disponibilités susceptibles de varier. Dernière mise à jour : janvier 2024.
             </div>
@@ -733,6 +886,18 @@
             });
           });
         });
+      });
+
+      // FAQ Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+              const answer = this.closest('.faq-item').querySelector('.faq-answer');
+              answer.classList.toggle('active');
+              this.textContent = answer.classList.contains('active')
+                  ? this.textContent.replace('❓', '✅')
+                  : this.textContent.replace('✅', '❓');
+          });
       });
 
       // Social Share Functions

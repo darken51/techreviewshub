@@ -230,14 +230,274 @@
             font-size: 0.85em;
             color: #999;
         }
+
+        /* Search Bar Styles */
+        .search-container {
+            max-width: 600px;
+            margin: 30px auto 0;
+            position: relative;
+        }
+        .search-box {
+            width: 100%;
+            padding: 15px 50px 15px 20px;
+            font-size: 1.1em;
+            border: 3px solid #667eea;
+            border-radius: 50px;
+            outline: none;
+            transition: box-shadow 0.3s;
+        }
+        .search-box:focus {
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+        }
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.3em;
+            color: #667eea;
+            pointer-events: none;
+        }
+        .search-results {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 10px;
+            display: none;
+            z-index: 1000;
+        }
+        .search-results.active {
+            display: block;
+        }
+        .search-result-item {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .search-result-item:hover {
+            background: #f8f9fa;
+        }
+        .search-result-item:last-child {
+            border-bottom: none;
+        }
+        .search-result-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .search-result-category {
+            font-size: 0.9em;
+            color: #667eea;
+            font-weight: 600;
+        }
+        .search-result-price {
+            font-size: 0.9em;
+            color: #e74c3c;
+            margin-top: 5px;
+        }
+        .no-results {
+            padding: 20px;
+            text-align: center;
+            color: #999;
+        }
+
+        /* Dark Mode Toggle */
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            border: 3px solid #667eea;
+            border-radius: 50px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #667eea;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            z-index: 1001;
+        }
+        .dark-mode-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+        }
+        body.dark-mode header,
+        body.dark-mode .category-section {
+            background: #2a2a3e;
+            color: #e0e0e0;
+        }
+        body.dark-mode h1,
+        body.dark-mode .category-title {
+            color: #8b9cff;
+        }
+        body.dark-mode .subtitle,
+        body.dark-mode .tagline {
+            color: #b0b0c0;
+        }
+        body.dark-mode .review-card {
+            background: linear-gradient(to bottom right, #353548, #2a2a3e);
+            color: #e0e0e0;
+        }
+        body.dark-mode .review-card h2,
+        body.dark-mode .search-result-title {
+            color: #e0e0e0;
+        }
+        body.dark-mode .btn {
+            background: linear-gradient(135deg, #8b9cff 0%, #9b7cff 100%);
+        }
+        body.dark-mode .dark-mode-toggle {
+            background: #2a2a3e;
+            color: #8b9cff;
+        }
+        body.dark-mode .search-box {
+            background: #2a2a3e;
+            color: #e0e0e0;
+            border-color: #8b9cff;
+        }
+        body.dark-mode .search-results {
+            background: #2a2a3e;
+        }
+        body.dark-mode .search-result-item {
+            border-bottom-color: #444;
+        }
+        body.dark-mode .search-result-item:hover {
+            background: #353548;
+        }
+        body.dark-mode .deals-section {
+            background: #2a2a3e;
+            color: #e0e0e0;
+        }
+        body.dark-mode .deal-card {
+            background: linear-gradient(to bottom right, #353548, #2a2a3e);
+        }
+        body.dark-mode .deal-badge {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+        }
+
+        /* Deals Section */
+        .deals-section {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .deals-title {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        .deals-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+        .deals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .deal-card {
+            background: linear-gradient(to bottom right, #fff5f5, #ffe6e6);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 2px solid #e74c3c;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .deal-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.2);
+        }
+        .deal-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9em;
+            box-shadow: 0 3px 10px rgba(231, 76, 60, 0.4);
+        }
+        .deal-card h3 {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .deal-card .deal-price {
+            font-size: 1.8em;
+            color: #e74c3c;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .deal-card .original-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 1.1em;
+            margin-right: 10px;
+        }
+        .deal-card .deal-description {
+            color: #666;
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+        .deal-card .btn-deal {
+            display: inline-block;
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: transform 0.3s;
+            margin-top: 10px;
+        }
+        .deal-card .btn-deal:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <!-- Dark Mode Toggle -->
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+            <span id="dark-mode-icon">🌙</span> Mode Sombre
+        </button>
+
         <header>
             <h1>🎯 Tech Reviews Hub</h1>
             <p class="subtitle">Tests et Avis d'Experts sur les Produits Tech</p>
             <p class="tagline">Nous vous aidons à prendre des décisions éclairées pour vos achats technologiques</p>
+
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-box" id="searchInput" placeholder="Rechercher un produit (laptop, casque, moniteur...)">
+                <span class="search-icon">🔍</span>
+                <div class="search-results" id="searchResults"></div>
+            </div>
+
             <nav style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e9ecef;">
                 <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; font-size: 1.1em;">
                     <a href="#laptops" style="color: #667eea; text-decoration: none; font-weight: 600; padding: 8px 15px; border-radius: 6px; transition: background 0.3s;">💻 Laptops</a>
@@ -252,6 +512,73 @@
                 </div>
             </nav>
         </header>
+
+        <!-- DEALS DU JOUR -->
+        <div class="deals-section">
+            <h2 class="deals-title">🔥 Deals du Jour</h2>
+            <p class="deals-subtitle">Les meilleures offres tech sélectionnées pour vous aujourd'hui</p>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge">-22%</div>
+                    <h3>Sony WH-1000XM5</h3>
+                    <div>
+                        <span class="original-price">329€</span>
+                        <span class="deal-price">256€</span>
+                    </div>
+                    <p class="deal-description">
+                        Le meilleur casque ANC du marché à prix réduit. Réduction de bruit exceptionnelle, 30h d'autonomie.
+                    </p>
+                    <a href="https://amazon.fr/dp/B09Y2MYL5C?tag=techrevie06ac-21" class="btn-deal" target="_blank" rel="nofollow">
+                        Voir l'offre →
+                    </a>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-badge">-15%</div>
+                    <h3>Logitech MX Master 3S</h3>
+                    <div>
+                        <span class="original-price">119€</span>
+                        <span class="deal-price">101€</span>
+                    </div>
+                    <p class="deal-description">
+                        La souris ultime pour la productivité. Ergonomique, précise, 70 jours d'autonomie.
+                    </p>
+                    <a href="https://amazon.fr/dp/B09HM94VDS?tag=techrevie06ac-21" class="btn-deal" target="_blank" rel="nofollow">
+                        Voir l'offre →
+                    </a>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-badge">-18%</div>
+                    <h3>Dell UltraSharp U2723DE</h3>
+                    <div>
+                        <span class="original-price">599€</span>
+                        <span class="deal-price">491€</span>
+                    </div>
+                    <p class="deal-description">
+                        Moniteur 27" 4K IPS avec USB-C 90W. Parfait pour les professionnels exigeants.
+                    </p>
+                    <a href="https://amazon.fr/dp/B09TWLDTQ9?tag=techrevie06ac-21" class="btn-deal" target="_blank" rel="nofollow">
+                        Voir l'offre →
+                    </a>
+                </div>
+
+                <div class="deal-card">
+                    <div class="deal-badge">-12%</div>
+                    <h3>Logitech MX Keys</h3>
+                    <div>
+                        <span class="original-price">129€</span>
+                        <span class="deal-price">113€</span>
+                    </div>
+                    <p class="deal-description">
+                        Clavier sans fil premium avec touches rétroéclairées. Confort de frappe exceptionnel.
+                    </p>
+                    <a href="https://amazon.fr/dp/B07W6JG6Z7?tag=techrevie06ac-21" class="btn-deal" target="_blank" rel="nofollow">
+                        Voir l'offre →
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <!-- LAPTOPS -->
         <div id="laptops" class="category-section">
@@ -607,6 +934,93 @@
 
       // Show popup after 30 seconds
       setTimeout(showNewsletter, 30000);
+
+      // Search Functionality
+      const products = [
+        {name: "Lenovo ThinkPad X1 Carbon Gen 11", category: "Laptop", price: "1799€", url: "laptop_001_review.html"},
+        {name: "MacBook Pro 14 M3", category: "Laptop", price: "1999€", url: "laptop_002_review.html"},
+        {name: "Dell XPS 15 9530", category: "Laptop", price: "1899€", url: "laptop_003_review.html"},
+        {name: "HP Spectre x360 14", category: "Laptop", price: "1499€", url: "laptop_004_review.html"},
+        {name: "ASUS ROG Zephyrus G14", category: "Laptop", price: "1699€", url: "laptop_005_review.html"},
+        {name: "Microsoft Surface Laptop 5", category: "Laptop", price: "1399€", url: "laptop_006_review.html"},
+        {name: "Sony WH-1000XM5", category: "Casque", price: "329€", url: "headphone_001_review.html"},
+        {name: "Apple AirPods Pro 2", category: "Casque", price: "279€", url: "headphone_002_review.html"},
+        {name: "Bose QuietComfort 45", category: "Casque", price: "329€", url: "headphone_003_review.html"},
+        {name: "Sennheiser Momentum 4", category: "Casque", price: "349€", url: "headphone_004_review.html"},
+        {name: "Beats Studio Pro", category: "Casque", price: "379€", url: "headphone_005_review.html"},
+        {name: "Dell UltraSharp U2723DE", category: "Moniteur", price: "599€", url: "monitor_001_review.html"},
+        {name: "LG 27GN950-B", category: "Moniteur", price: "799€", url: "monitor_002_review.html"},
+        {name: "Samsung Odyssey G7", category: "Moniteur", price: "699€", url: "monitor_003_review.html"},
+        {name: "Logitech MX Keys", category: "Clavier", price: "129€", url: "keyboard_001_review.html"},
+        {name: "Keychron K8 Pro", category: "Clavier", price: "109€", url: "keyboard_002_review.html"},
+        {name: "Corsair K100 RGB", category: "Clavier", price: "249€", url: "keyboard_003_review.html"},
+        {name: "Logitech MX Master 3S", category: "Souris", price: "119€", url: "mouse_001_review.html"},
+        {name: "Razer DeathAdder V3 Pro", category: "Souris", price: "159€", url: "mouse_002_review.html"},
+        {name: "iPad Pro 12.9\" M2", category: "Tablette", price: "1449€", url: "tablet_001_review.html"},
+        {name: "Samsung Galaxy Tab S9 Ultra", category: "Tablette", price: "1299€", url: "tablet_002_review.html"}
+      ];
+
+      const searchInput = document.getElementById('searchInput');
+      const searchResults = document.getElementById('searchResults');
+
+      searchInput.addEventListener('input', function() {
+        const query = this.value.toLowerCase().trim();
+
+        if (query.length === 0) {
+          searchResults.classList.remove('active');
+          return;
+        }
+
+        const filtered = products.filter(p =>
+          p.name.toLowerCase().includes(query) ||
+          p.category.toLowerCase().includes(query)
+        );
+
+        if (filtered.length === 0) {
+          searchResults.innerHTML = '<div class="no-results">Aucun produit trouvé pour "' + query + '"</div>';
+          searchResults.classList.add('active');
+          return;
+        }
+
+        const html = filtered.slice(0, 5).map(p => `
+          <div class="search-result-item" onclick="window.location='${p.url}'">
+            <div class="search-result-title">${p.name}</div>
+            <div class="search-result-category">${p.category}</div>
+            <div class="search-result-price">${p.price}</div>
+          </div>
+        `).join('');
+
+        searchResults.innerHTML = html;
+        searchResults.classList.add('active');
+
+        gtag('event', 'search', {'search_term': query});
+      });
+
+      // Click outside to close search results
+      document.addEventListener('click', function(e) {
+        if (!e.target.closest('.search-container')) {
+          searchResults.classList.remove('active');
+        }
+      });
+
+      // Dark Mode Toggle
+      function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        const icon = document.getElementById('dark-mode-icon');
+        icon.textContent = isDark ? '☀️' : '🌙';
+
+        // Save preference
+        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+
+        gtag('event', 'dark_mode_toggle', {'mode': isDark ? 'dark' : 'light'});
+      }
+
+      // Load dark mode preference
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        document.getElementById('dark-mode-icon').textContent = '☀️';
+      }
     </script>
 </body>
 </html>

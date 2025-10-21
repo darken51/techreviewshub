@@ -327,6 +327,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container { padding: 25px; }
@@ -648,6 +699,110 @@
             </p>
         </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le S Pen est-il inclus avec la Galaxy Tab S9 Ultra ou vendu séparément ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>OUI, le S Pen est INCLUS avec la Galaxy Tab S9 Ultra ! C'est un énorme avantage vs iPad Pro (Apple Pencil 2 = 149€ en plus). Le S Pen se fixe magnétiquement à l'arrière de la tablette pour le rangement et la charge sans fil. Latence ultra-faible (2.8 ms vs 9 ms Apple Pencil), 4096 niveaux de pression, détection d'inclinaison, bouton programmable pour actions rapides. Autonomie : environ 10 heures, charge complète en 10 minutes via fixation magnétique. Compatible avec toutes les apps de dessin Android : Clip Studio Paint, Infinite Painter, Autodesk SketchBook, Samsung Notes. Pas besoin d'acheter d'accessoire supplémentaire pour le dessin !</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quel clavier acheter pour la Galaxy Tab S9 Ultra ? Le Book Cover Keyboard est-il inclus ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Le clavier n'est PAS inclus, vendu séparément. Options officielles Samsung : Book Cover Keyboard Slim (299€, ultra-fin, trackpad tactile, 2 angles), Book Cover Keyboard (249€, plus épais, protection intégrale). Alternatives tierces : Logitech Combo Touch (179€), claviers Bluetooth génériques (30-80€). Le Book Cover Keyboard Slim est recommandé pour productivité sérieuse : touches rétroéclairées, trackpad précis, magnétique (pose/dépose facile). Pour usage occasionnel : un clavier Bluetooth basique suffit. Attention : la taille 14.6" limite les options tierces (moins de choix que pour iPad Pro).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Comment fonctionne le mode DeX pour la productivité ? Est-ce vraiment utile ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Samsung DeX transforme l'interface Android en un bureau type Windows/macOS : fenêtres redimensionnables, barre des tâches, multi-fenêtres avancé (jusqu'à 5 apps simultanées), support souris/trackpad complet. Activation : automatique quand vous connectez le clavier, ou manuelle via raccourci. Cas d'usage : édition de documents (Microsoft 365, Google Workspace), navigation web multi-onglets, email professionnel, visioconférences. Limitations : certaines apps Android ne sont pas optimisées pour DeX (s'affichent en mode mobile), pas d'apps desktop complètes (Photoshop complet, développement lourd). Verdict : très utile pour bureautique/productivité standard, ne remplace pas 100% un PC pour pros exigeants.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le S Pen est-il aussi bon que l'Apple Pencil 2 pour dessiner et prendre des notes ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Le S Pen est MEILLEUR techniquement : latence 2.8 ms (vs 9 ms Apple Pencil 2), donc plus réactif. Détection de pression équivalente (4096 niveaux), détection d'inclinaison, bouton programmable (shortcuts). Avantages S Pen : inclus gratuitement, fonctionnalités Air Actions (contrôle à distance par gestes), prise de notes instantanée (écran éteint). Inconvénient : écosystème d'apps moins riche qu'iPad (pas de Procreate, GoodNotes limité). Apps Android excellentes : Clip Studio Paint, Infinite Painter, Samsung Notes (très complète), Noteshelf. Pour dessin pro : Apple Pencil + Procreate reste référence. Pour prise de notes : S Pen + Samsung Notes = excellent. Qualité matérielle équivalente, choix dépend de votre écosystème apps.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle capacité de stockage choisir ? Y a-t-il un slot microSD ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>OUI, il y a un slot microSD (jusqu'à 1 TB) ! Énorme avantage vs iPad Pro. Stockages disponibles : 256 GB (1 199€), 512 GB (1 399€), 1 TB (prix variable). Recommandation : 256 GB + carte microSD 512 GB (50-80€) = solution la plus économique. Utilisez le stockage interne pour système et apps, la microSD pour médias (photos, vidéos, films téléchargés). Attention : certaines apps de dessin (Clip Studio) nécessitent stockage interne pour performances optimales, ne mettez pas tout sur microSD. Astuce : prenez 256 GB si budget serré, ajoutez microSD selon besoins. Pour créatifs intensifs (vidéo 4K) : 512 GB + microSD 512 GB = confort maximal.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est la garantie Samsung ? Vaut-il mieux prendre Samsung Care+ ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Garantie standard Samsung : 1 an constructeur + garantie légale 2 ans (Europe). Samsung Care+ pour Galaxy Tab S9 Ultra : 129€ pour 2 ans (moins cher qu'AppleCare+ iPad Pro = 169€). Avantages : 2 réparations/an pour dommages accidentels avec franchise 99€, remplacement écran cassé, dégâts liquides (attention : S9 Ultra est IP68, résiste déjà à l'eau !), support prioritaire. Recommandé si : vous transportez la tablette fréquemment, risques de chutes, enfants. Moins utile si : usage domestique, vous faites attention, tablette reste au bureau/domicile. Le SAV Samsung est correct mais variable selon pays (délais 1-3 semaines).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Peut-on connecter la Tab S9 Ultra à un moniteur externe ? Comment ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>OUI, via USB-C vers HDMI/DisplayPort. En mode DeX, vous pouvez : (1) Miroir d'écran : afficher la même chose sur la tablette et le moniteur externe, (2) Bureau étendu : utiliser le moniteur comme écran principal (jusqu'à 4K 60 Hz) et la tablette comme second écran tactile. Setup recommandé : hub USB-C multiport (40-80€) avec HDMI + USB-A + charge simultanée. Cas d'usage pro : présentation clients, édition vidéo sur grand écran, station de travail à domicile (clavier/souris USB + moniteur 27"). Attention : toutes les apps ne supportent pas bien l'affichage externe. Microsoft 365, Chrome, apps vidéo fonctionnent parfaitement. Certaines apps de jeux restent en mode portrait forcé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Share Section -->
+            <div class="social-share">
+                <h3>Partager cet article</h3>
+                <div class="share-buttons">
+                    <a href="javascript:void(0);" onclick="shareOnFacebook()" class="share-btn">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnTwitter()" class="share-btn">
+                        <span>🐦</span> Twitter
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnLinkedIn()" class="share-btn">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnWhatsApp()" class="share-btn">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareByEmail()" class="share-btn">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+            </div>
+
         <p style="font-size: 0.9em; color: #666; margin-top: 40px;">
             <strong>Transparence :</strong> Ce site contient des liens affiliés vers Amazon.fr.
             Nous pouvons recevoir une commission sans frais supplémentaires pour vous si vous effectuez un achat via nos liens.
@@ -690,6 +845,18 @@
             });
           });
         });
+      });
+
+      // FAQ Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+              const answer = this.closest('.faq-item').querySelector('.faq-answer');
+              answer.classList.toggle('active');
+              this.textContent = answer.classList.contains('active')
+                  ? this.textContent.replace('❓', '✅')
+                  : this.textContent.replace('✅', '❓');
+          });
       });
 
       // Social Share Functions

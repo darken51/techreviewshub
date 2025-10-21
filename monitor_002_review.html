@@ -385,6 +385,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container {
@@ -659,6 +710,109 @@
             🛒 Voir le Prix sur Amazon.fr (549€)
         </a>
 
+        <!-- FAQ Section -->
+        <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+            <h2>Questions Fréquentes (FAQ)</h2>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Le LG 27GN950-B est-il bon pour la productivité bureautique ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le 27GN950 excelle en bureautique grâce à sa résolution 4K UHD 3840x2160 (163 ppi) qui offre un espace de travail immense et une netteté exceptionnelle pour Excel, code, multitasking. Le panneau IPS Nano avec 98% DCI-P3 garantit des couleurs précises pour la création de contenu. Le 144 Hz rend le scroll ultra fluide dans Chrome/Word. Limitation : pas de hub USB-C intégré avec Power Delivery (contrairement aux Dell UltraSharp) - il faut une docking station séparée. Pour bureautique pure, un Dell U2723DE (hub 90W, KVM) est plus polyvalent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Peut-on jouer en FPS compétitif sur le LG 27GN950 ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, mais avec nuances. Le 27GN950 offre 144 Hz + 1 ms (GtG) + G-Sync Compatible - excellent pour FPS compétitif (Valorant, CS2, Apex). MAIS la résolution 4K est très gourmande : il faut une RTX 4080/4090 ou RX 7900 XTX pour tenir 144+ FPS en 4K Ultra. La plupart des gamers compétitifs jouent en 1080p/1440p pour maximiser les FPS. Pour CS2/Valorant esport, un moniteur 1440p 240-360 Hz (LG 27GP850, Asus PG279QM) est plus adapté. Le 27GN950 excelle en gaming 4K solo AAA (Cyberpunk, Red Dead) à 60-100 FPS.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Le LG 27GN950 nécessite-t-il une carte graphique puissante ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, absolument. Pour exploiter le 4K 144 Hz en gaming, vous avez besoin d'une RTX 4070 Ti minimum (FPS moyen 80-120 en Ultra), idéalement RTX 4080/4090 (120-144 FPS stable). Avec une RTX 3060 Ti ou RX 6700 XT, vous serez limité à 60-80 FPS en 4K ou devrez baisser en 1440p. Pour la bureautique/création 4K sans gaming, une carte modeste (GTX 1650, iGPU Intel Iris Xe) suffit. En résumé : gaming 4K = GPU haut de gamme obligatoire, bureautique 4K = GPU entrée/milieu OK.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Comment le LG 27GN950 se compare-t-il aux moniteurs OLED gaming ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Face aux OLED gaming (Asus ROG Swift PG27AQDM, LG 27GR95QE-B), le 27GN950 IPS perd en contraste (1000:1 vs infini OLED), en HDR (DisplayHDR 600 vs 1000+ nits OLED), et en temps de réponse (1 ms vs 0.03 ms OLED). MAIS il gagne en durabilité (pas de burn-in OLED), en luminosité SDR (450 nits vs 250 nits OLED), et en prix (799€ vs 1000-1300€ OLED). Pour gaming HDR immersif (jeux sombres, RPG), l'OLED est supérieur. Pour gaming/bureautique mixte longue durée, le 27GN950 IPS est plus fiable et polyvalent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Le rétroéclairage Sphere Lighting 2.0 est-il vraiment utile ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>C'est surtout un gimmick RGB. Le Sphere Lighting 2.0 projette un halo RGB synchronisé derrière le moniteur - joli pour l'ambiance gaming setup, mais sans impact sur la performance ou l'immersion in-game (contrairement à l'Ambilight Philips qui réagit au contenu écran). Vous pouvez le désactiver complètement si vous préférez un setup sobre. Les vrais atouts du 27GN950 sont ailleurs : dalle Nano IPS 98% DCI-P3, 4K 144 Hz, 1 ms. Le Sphere Lighting est un bonus cosmétique pour les fans RGB, ignorable pour les puristes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Peut-on calibrer le LG 27GN950 pour la retouche photo/vidéo pro ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>Oui, le 27GN950 supporte la calibration matérielle via sondes (X-Rite i1 Display Pro, Datacolor SpyderX) et logiciels (CalMAN, DisplayCAL). Avec sa couverture 98% DCI-P3 et son Delta E usine déjà < 2, il convient aux photographes/vidéastes professionnels (retouche Lightroom/Premiere). Pour de l'impression offset ou du mastering vidéo HDR broadcast, un BenQ SW270C (99% Adobe RGB) ou Eizo ColorEdge (10-bit hardware LUT) est plus adapté. Pour web/YouTube/réseaux sociaux, le 27GN950 calibré est excellent.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                <h3 class="faq-question" itemprop="name">
+                    <button class="faq-toggle">Le LG 27GN950-B vaut-il son prix de 799€ ?</button>
+                </h3>
+                <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                    <div itemprop="text">
+                        <p>À 799€, le 27GN950 offre un excellent rapport qualité/prix pour un 27" 4K 144 Hz IPS Nano. Face au Samsung Odyssey G7 (32" 1440p 240 Hz, 699€), il gagne en résolution 4K (création/bureautique) mais perd en taux rafraîchissement gaming pur. Face au Asus ROG Swift PG27UQ (4K 144 Hz FALD, 1599€), il est moitié prix avec 90% des performances. Pour gamers AAA + créatifs cherchant un moniteur 4K polyvalent sans OLED, c'est un sweet spot. Pour FPS esport pur, un 1440p 240 Hz est plus pertinent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-share">
+            <h3>Partager cet article :</h3>
+            <div class="share-buttons">
+                <a href="#" class="share-btn facebook" onclick="shareOnFacebook(); return false;">
+                    <span>📘</span> Facebook
+                </a>
+                <a href="#" class="share-btn twitter" onclick="shareOnTwitter(); return false;">
+                    <span>🐦</span> Twitter
+                </a>
+                <a href="#" class="share-btn linkedin" onclick="shareOnLinkedIn(); return false;">
+                    <span>💼</span> LinkedIn
+                </a>
+                <a href="#" class="share-btn whatsapp" onclick="shareOnWhatsApp(); return false;">
+                    <span>💬</span> WhatsApp
+                </a>
+                <a href="#" class="share-btn email" onclick="shareByEmail(); return false;">
+                    <span>✉️</span> Email
+                </a>
+            </div>
+        </div>
+
         <div class="disclosure">
             <strong>⚠️ Transparence :</strong> Ce site contient des liens affiliés Amazon. Si vous effectuez un achat via nos liens, nous pouvons recevoir une commission sans frais supplémentaires pour vous. Cela nous permet de continuer à produire des tests indépendants et détaillés. Notre avis reste 100% objectif et non influencé par ces partenariats.
         </div>
@@ -694,6 +848,18 @@
             });
           });
         });
+      });
+
+      // FAQ Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+              const answer = this.closest('.faq-item').querySelector('.faq-answer');
+              answer.classList.toggle('active');
+              this.textContent = answer.classList.contains('active')
+                  ? this.textContent.replace('❓', '✅')
+                  : this.textContent.replace('✅', '❓');
+          });
       });
 
       // Social Share Functions

@@ -450,7 +450,57 @@
         .share-btn span {
             font-size: 1.3em;
         }
-
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
 
         @media (max-width: 768px) {
@@ -670,6 +720,88 @@
                 </a>
             </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le Bose QC45 fonctionne-t-il sur Android et iPhone ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, le Bose QuietComfort 45 est compatible avec Android et iPhone via Bluetooth standard. Contrairement aux AirPods, il n'y a pas de différence d'expérience entre plateformes : mêmes fonctionnalités ANC, même app Bose Music, même qualité sonore. C'est un vrai casque universel qui ne privilégie aucun écosystème, idéal si vous utilisez plusieurs appareils différents.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est l'autonomie réelle du Bose QC45 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Le Bose QC45 offre 24 heures d'autonomie avec Bluetooth + ANC activé, ce qui permet de tenir 3-4 jours d'utilisation intensive (6-8h par jour). En mode filaire jack 3.5mm, l'autonomie descend à 22h car le casque reste alimenté pour l'ANC. La charge rapide USB-C donne 3 heures d'écoute en 15 minutes. C'est suffisant pour les longs vols ou une semaine de télétravail sans recharge.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le Bose QC45 peut-il connecter deux appareils simultanément ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Non, le Bose QC45 ne supporte pas le multipoint Bluetooth (connexion de deux appareils simultanés). Il ne peut être connecté qu'à un seul appareil à la fois. Pour basculer entre téléphone et ordinateur, il faut déconnecter manuellement via les paramètres Bluetooth. C'est une limitation frustrante vs les Sony WH-1000XM5 ou Sennheiser Momentum 4 qui offrent le multipoint. Bose a choisi la simplicité au détriment de cette fonctionnalité pratique.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Peut-on ajuster le son du Bose QC45 avec un égaliseur ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Non, l'app Bose Music ne propose aucun égaliseur. Vous êtes bloqué avec la signature sonore Bose par défaut (basses généreuses, médiums doux, aigus légèrement en retrait). Pour ceux qui veulent personnaliser le son, c'est frustrant. Les Sony WH-1000XM5 et Sennheiser Momentum 4 offrent des égaliseurs 5-bandes complètement personnalisables. Bose mise sur une philosophie plug-and-play sans réglages complexes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le Bose QC45 est-il confortable pour de longues sessions ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui, c'est le point fort majeur du QC45 : il est le casque le plus confortable du marché. Avec ses coussinets en mousse à mémoire de forme généreuse, son arceau rembourré, et sa pression minimale (240g), vous pouvez le porter 6-8 heures sans gêne ni fatigue. La ventilation évite la chaleur excessive. Pour les longs vols transatlantiques, les marathons de télétravail, ou les sessions d'écoute prolongées, aucun concurrent n'égale ce niveau de confort.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Comment se compare l'ANC du Bose QC45 vs Sony WH-1000XM5 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>L'ANC du Bose QC45 est excellent (30-32 dB d'atténuation) mais battu par le Sony WH-1000XM5 (35-38 dB). Concrètement, les deux éliminent bien les bruits constants (avion, climatisation), mais le Sony filtre mieux les conversations ambiantes au bureau. Le Bose reste très performant et largement suffisant pour la majorité des usages. La différence n'est perceptible qu'en comparaison directe. Pour le voyage et le télétravail, le QC45 offre un ANC top-tier, juste pas le meilleur absolu du marché en 2024.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est la garantie du Bose QC45 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Bose propose une garantie standard de 2 ans (supérieure à la plupart des concurrents qui offrent 1 an). Le service client Bose est réputé réactif avec un SAV de qualité. La durabilité des QuietComfort est légendaire : la plupart des utilisateurs gardent leur casque 5-7 ans sans problème. Les coussinets peuvent être remplacés facilement (40€ la paire). Pas d'option de garantie étendue officielle, mais la garantie 2 ans et la fiabilité Bose sont des garanties suffisantes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="related-products">
                 <h3>Produits Similaires Testés</h3>
                 <ul>
@@ -719,6 +851,27 @@
               'event_label': button.textContent.trim()
             });
           });
+        });
+
+        // FAQ Toggle with Google Analytics tracking
+        const faqToggles = document.querySelectorAll('.faq-toggle');
+        faqToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                const answer = this.closest('.faq-item').querySelector('.faq-answer');
+                const isOpening = !answer.classList.contains('active');
+                answer.classList.toggle('active');
+                this.textContent = answer.classList.contains('active')
+                    ? this.textContent.replace('❓', '✅')
+                    : this.textContent.replace('✅', '❓');
+
+                // Track FAQ interaction
+                if (isOpening) {
+                    gtag('event', 'faq_open', {
+                        'event_category': 'FAQ',
+                        'event_label': this.textContent.replace('❓ ', '').replace('✅ ', '')
+                    });
+                }
+            });
         });
       });
 

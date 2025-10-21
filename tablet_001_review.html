@@ -327,6 +327,57 @@
             font-size: 1.3em;
         }
 
+        .faq-section {
+            margin: 50px 0;
+            padding: 40px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .faq-section h2 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .faq-item {
+            background: white;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        .faq-question {
+            margin: 0;
+            font-size: 1.1em;
+        }
+        .faq-toggle {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            border: none;
+            text-align: left;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 1em;
+        }
+        .faq-toggle:hover {
+            background: #f8f9fa;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer.active {
+            max-height: 500px;
+            padding: 20px;
+        }
+        .faq-answer p {
+            margin-bottom: 15px;
+            color: #555;
+        }
 
         @media (max-width: 768px) {
             .container { padding: 25px; }
@@ -625,6 +676,99 @@
             </p>
         </div>
 
+            <!-- FAQ Section -->
+            <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+                <h2>Questions Fréquentes (FAQ)</h2>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Le Magic Keyboard est-il inclus avec l'iPad Pro 12.9" M2 ou vendu séparément ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Le Magic Keyboard est vendu SÉPARÉMENT à 399€ (modèle 12.9"). Apple ne le fournit pas avec l'iPad Pro. C'est un investissement conséquent mais transformateur : clavier rétroéclairé, trackpad tactile, port USB-C de charge supplémentaire, angle ajustable en "lévitation". Alternative moins chère : Smart Keyboard Folio (229€, sans trackpad) ou claviers tiers comme Logitech Combo Touch (199€). Si vous visez vraiment le remplacement laptop, le Magic Keyboard est quasi indispensable. Compatibilité : uniquement iPad Pro 12.9" 3e, 4e, 5e et 6e génération (M2).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ L'Apple Pencil 2 est-il inclus ? Comment se recharge-t-il ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Non, l'Apple Pencil 2 est vendu séparément à 149€. Il se recharge magnétiquement en se fixant sur le côté de l'iPad Pro (charge sans fil). Appairage et charge automatiques dès qu'il se fixe magnétiquement. Autonomie : 12 heures d'utilisation, charge complète en 30 minutes. L'Apple Pencil 2 est OBLIGATOIRE pour l'iPad Pro M2 (l'ancien Pencil 1 n'est pas compatible). Si vous faites du dessin, prise de notes manuscrites, ou retouche photo, c'est un accessoire quasi indispensable. Latence ultra-faible (9 ms), détection de pression (4096 niveaux), détection d'inclinaison.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Peut-on vraiment remplacer un laptop par l'iPad Pro 12.9" M2 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Oui et non, selon vos besoins. Parfait pour : bureautique (Microsoft 365, Google Workspace), création de contenu (vidéo sur LumaFusion, design sur Affinity Designer, dessin sur Procreate), navigation web, emails, visioconférences. Limité pour : développement (pas de Xcode complet, terminal limité), applications desktop complexes (Photoshop complet, After Effects, logiciels métier Windows), multitâche avancé (iPadOS reste moins flexible que macOS). Avec Magic Keyboard + Apple Pencil : excellent hybride créatif/bureautique. Pour du dev ou apps pro spécifiques : gardez un laptop. Pour 80% des usages grand public/créatif : remplacement viable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Procreate et les apps de dessin fonctionnent-elles bien sur l'iPad Pro M2 ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>EXCELLEMMENT bien ! L'iPad Pro 12.9" M2 + Apple Pencil 2 est la référence absolue pour le dessin numérique. Procreate (12€) exploite pleinement la puce M2 : canva jusqu'à 16k pixels, +200 couches, fluidité parfaite même sur illustrations complexes. Autres apps pro : Affinity Photo/Designer (performances desktop), Adobe Fresco (aquarelle/huile réalistes), Clip Studio Paint (manga/BD). L'écran Liquid Retina XDR (600 nits, P3) offre des couleurs précises pour le print. ProMotion 120 Hz + latence 9 ms = expérience proche du papier. Beaucoup d'illustrateurs pros l'utilisent comme outil principal. Seule limite : pas de Photoshop COMPLET (version iPad allégée).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle capacité de stockage choisir : 128 GB, 256 GB ou 512 GB ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Dépend de votre usage. 128 GB (1 199€) : suffisant pour bureautique, navigation, apps légères, si vous utilisez iCloud/cloud. ATTENTION : seulement ~110 GB disponibles (système = 15-18 GB). 256 GB (1 319€) : recommandé pour usage mixte, quelques jeux, photos/vidéos modérées, apps créatives légères. Meilleur rapport qualité/prix (+120€ pour 128 GB supplémentaires). 512 GB (1 559€) : pour créatifs intensifs (Procreate, LumaFusion, vidéos 4K), gamers avec gros jeux (Resident Evil Village = 30 GB), usage offline important. 1-2 TB : uniquement pros vidéo 4K/RAW ou photographes. Astuce : privilégiez iCloud+ (2€/mois pour 50 GB) et économisez sur le stockage interne.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                    <h3 class="faq-question" itemprop="name">
+                        <button class="faq-toggle">❓ Quelle est la garantie Apple pour l'iPad Pro ? Vaut-il mieux prendre AppleCare+ ?</button>
+                    </h3>
+                    <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                        <div itemprop="text">
+                            <p>Garantie standard Apple : 1 an (défauts de fabrication) + garantie légale 2 ans (en Europe). AppleCare+ pour iPad Pro 12.9" : 169€ pour 2 ans de couverture étendue. Avantages : 2 incidents de dommages accidentels/an (écran cassé, dégâts liquides) avec franchise 49€, support technique prioritaire, couverture batterie (< 80% capacité). Recommandé si : vous transportez l'iPad souvent, vous avez des enfants, vous l'utilisez en extérieur, vous n'avez pas d'assurance habitation couvrant la casse. À éviter si : iPad reste à domicile, vous faites attention, votre assurance habitation couvre déjà. Alternative : assurances tiers (Carrefour, FNAC) souvent moins chères.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Share Section -->
+            <div class="social-share">
+                <h3>Partager cet article</h3>
+                <div class="share-buttons">
+                    <a href="javascript:void(0);" onclick="shareOnFacebook()" class="share-btn">
+                        <span>📘</span> Facebook
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnTwitter()" class="share-btn">
+                        <span>🐦</span> Twitter
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnLinkedIn()" class="share-btn">
+                        <span>💼</span> LinkedIn
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareOnWhatsApp()" class="share-btn">
+                        <span>💬</span> WhatsApp
+                    </a>
+                    <a href="javascript:void(0);" onclick="shareByEmail()" class="share-btn">
+                        <span>📧</span> Email
+                    </a>
+                </div>
+            </div>
+
         <p style="font-size: 0.9em; color: #666; margin-top: 40px;">
             <strong>Transparence :</strong> Ce site contient des liens affiliés vers Amazon.fr.
             Nous pouvons recevoir une commission sans frais supplémentaires pour vous si vous effectuez un achat via nos liens.
@@ -667,6 +811,18 @@
             });
           });
         });
+      });
+
+      // FAQ Toggle
+      const faqToggles = document.querySelectorAll('.faq-toggle');
+      faqToggles.forEach(toggle => {
+          toggle.addEventListener('click', function() {
+              const answer = this.closest('.faq-item').querySelector('.faq-answer');
+              answer.classList.toggle('active');
+              this.textContent = answer.classList.contains('active')
+                  ? this.textContent.replace('❓', '✅')
+                  : this.textContent.replace('✅', '❓');
+          });
       });
 
       // Social Share Functions
